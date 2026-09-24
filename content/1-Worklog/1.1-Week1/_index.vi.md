@@ -8,8 +8,10 @@ pre: " 1.1 "
 
 ### Mục tiêu tuần 1:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Hiểu và thực hành phân quyền, quản lý truy cập an toàn trên AWS bằng IAM (User, Group, Policy, Role, Switch Role).
+* Hiểu cấu trúc mạng ảo Amazon VPC, các thành phần định tuyến, bảo mật và thiết lập kết nối AWS Site-to-Site VPN.
+* Nắm vững cách khởi tạo, quản lý và triển khai ứng dụng thực tế trên dịch vụ máy chủ ảo Amazon EC2 (Linux & Windows).
+* Biết cách cấp quyền cho ứng dụng truy cập dịch vụ AWS an toàn thông qua IAM Role và sử dụng môi trường AWS CloudShell.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
@@ -23,33 +25,25 @@ pre: " 1.1 "
 
 ### Kết quả đạt được tuần 1:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Hiểu và thực hành quản lý truy cập với AWS IAM: 
+  * Hiểu và thực hành quản lý truy cập với AWS IAM:
+  * Cấu hình IAM Role & Operator User.
+  * Thực hành Switch Role để chuyển đổi vai trò truy cập an toàn. 
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Thành thạo khởi tạo và cấu hình mạng Amazon VPC:
+  * Khởi tạo VPC, Subnet, Internet Gateway & Route Table.
+  * Thiết lập bảo mật với Security Group & giám sát với VPC Flow Logs.
+  * Triển khai NAT Gateway, SSM Session Manager và kết nối AWS Site-to-Site VPN.
+  * Cấu hình VPN nâng cao với Strongswan & Transit Gateway.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Nắm vững quản trị và sử dụng máy chủ ảo Amazon EC2:
+  * Khởi tạo, cấu hình và kết nối thành công với Microsoft Windows Server 2025 & Amazon Linux.
+  * Thực hiện các thao tác quản trị EC2: Đổi Instance Type, quản lý EBS Snapshot, Custom AMI, khôi phục quyền truy cập.
+  * Triển khai ứng dụng quản lý người dùng (Node.js/LAMP Stack) trên cả hai môi trường Linux và Windows.
+  * Áp dụng chính sách IAM để kiểm soát chi phí và giới hạn sử dụng tài nguyên EC2.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Cấp quyền cho ứng dụng và thao tác trên AWS CloudShell:
+  * Tạo và gán IAM Role cho ứng dụng (EC2/Lambda) để truy cập dịch vụ AWS an toàn.
+  * Sử dụng thành thạo môi trường CLI trên AWS CloudShell (thao tác lệnh Linux, quản lý tài nguyên qua AWS CLI, Upload/Download tệp).
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Thực hiện dọn dẹp (Clean up) tài nguyên sau mỗi bài thực hành để tối ưu chi phí.
