@@ -1,57 +1,47 @@
 ---
 title: "Week 2 Worklog"
-date: 2024-01-01
+date: 21-09-2026
 weight: 1
 chapter: false
-pre: " <b> 1.2. </b> "
+pre: "  1.2  "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
 ### Week 2 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Understand and practice object storage, high-traffic storage, and static website hosting on Amazon S3.
+* Master the concepts and implementation of relational databases using Amazon RDS.
+* Become proficient in using the AWS CLI, from basic to advanced levels (profile management, scripting, JMESPath data filtering).
+* Understand and practice high-performance NoSQL database administration with Amazon DynamoDB.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks to be implemented this week:
+| Day | Task                                                                                                                                                                                       | Start Date   | Completion Date | Resource Source                           |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
+| Mon | - Learn about Amazon S3 (Object Storage) <br> - **Hands-on Practice:** <br>&emsp; + Create S3 Bucket & Upload data to the Bucket <br>&emsp; + Enable Static Website hosting, configure Block Public Access & grant public permissions to Objects <br>&emsp; + Verify website operation & optimize speed using Amazon CloudFront <br>&emsp; + Configure Bucket Versioning & move Objects <br>&emsp; + Set up Multi-Region Object Replication <br>&emsp; + Clean up resources                                                                                             | 21/09/2026   | 21/09/2026      | <https://000057.awsstudygroup.com>
+| Tue | - Learn about Amazon RDS (Relational Database Service) <br> - **Hands-on Practice:** <br>&emsp; + Environment setup: Create VPC, Security Group & Database Subnet Group <br>&emsp; + Launch RDS Database Instance <br>&emsp; + Launch EC2 Instance & Deploy application <br>&emsp; + Perform Backup and Restore <br>&emsp; + Clean up resources                                            | 22/09/2026   | 22/09/2026      | <https://000005.awsstudygroup.com> |
+| 4   | - Learn about AWS Command Line Interface (AWS CLI) <br> - **Hands-on Practice:** <br>&emsp; + Install AWS CLI on the operating system (Windows / Linux / macOS) <br>&emsp; + Configure AWS CLI with Access Key & Secret Access Key <br>&emsp; + Use basic AWS CLI commands to manage AWS services <br>&emsp; + Verify and confirm account configuration <br>&emsp; + Clean up resources | 23/09/2026   | 23/09/2026      | <https://000045.awsstudygroup.com> |
+| 5   | - Learn about advanced AWS Command Line Interface (AWS CLI) & Scripting <br> - **Hands-on Practice:** <br>&emsp; + Configure multiple profiles (Named Profiles) in AWS CLI <br>&emsp; + Perform advanced resource management via AWS CLI commands <br>&emsp; + Automate AWS administration tasks using scripting (Bash / PowerShell) <br>&emsp; + Configure output format (JSON, Table, Text) & data filtering (JMESPath) <br>&emsp; + Resource cleanup | 24/09/2026 | 24/09/2026 | <https://000046.awsstudygroup.com> |
+| 6 | - Learn about Amazon DynamoDB (NoSQL Database) <br> - **Hands-on practice:** <br>&emsp; + Create DynamoDB Table & configure Partition Key / Sort Key <br>&emsp; + Perform data operations (Create, Read, Update, Delete - CRUD) <br>&emsp; + Configure Secondary Indexes (LSI / GSI) to optimize queries <br>&emsp; + Connect to and interact with DynamoDB from EC2 / Lambda <br>&emsp; + Resource cleanup | 25/09/2026 | 25/09/2026 | <https://000006.awsstudygroup.com> |
 
 
 ### Week 2 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Mastered Amazon S3 storage service:
+  * Created S3 Buckets; stored and managed data objects. 
+  * Configured static websites, granted public access, and accelerated data delivery via Amazon CloudFront. 
+  * Set up Bucket Versioning and Multi-Region Replication.
 
-* Successfully created and configured an AWS Free Tier account.
+* Deployed and managed Amazon RDS databases:
+  * Set up network infrastructure (VPC, Subnet Group, Security Group) optimized for databases. 
+  * Provisioned instances, connected applications, and performed data backup and restoration on Amazon RDS.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Professional use and automation of the AWS CLI:
+  * Install and configure Access Keys and manage multiple profiles (Named Profiles) locally. 
+  * Automate AWS administrative tasks using scripts (Bash / PowerShell). 
+  * Customize output formats (JSON, Table) and filter data using JMESPath queries.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Master Amazon DynamoDB (NoSQL database):
+  * Create DynamoDB tables; configure Partition Keys, Sort Keys, and secondary indexes (LSI / GSI). 
+  * Perform master CRUD (Create, Read, Update, Delete) data operations and connect DynamoDB to the application.
 
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Optimize costs by cleaning up resources after each practice exercise.
