@@ -1,6 +1,6 @@
 ---
 title: "Báo cáo thực tập"
-date: 14-09-2024
+date: 14-09-2026
 weight: 1
 chapter: false
 ---
@@ -25,7 +25,7 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 14/09/2026 đến ngày 14/12/2026
 
-![alt text](images/IMG_7839.jpg)
+![alt text](images/pfp.jpg)
 
 
 ### Nội dung báo cáo
