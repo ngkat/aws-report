@@ -10,95 +10,78 @@ pre: "  4.3  "
 
 ### Event Objectives
 
-- Launch the "Buildathon" technology competition/challenge, organized by CMC Global in collaboration with partners.
-- Introduce and provide insights into cutting-edge technologies: AWS Cloud, Generative AI, and specifically Agentic AI (AI Agents).
-- Provide hands-on guidance on AI development techniques using AWS infrastructure (Prompt Engineering, RAG, Knowledge Bases).
-- Connect the tech community, offer career development guidance, and provide interview preparation support in the Cloud & AI sectors.
+- Experience a keynote address and fireside chat with **Dr. Werner Vogels** — Vice President and Chief Technology Officer (CTO) of Amazon.
+- Address a pivotal question regarding the future of the software industry in the AI ​​era: Will artificial intelligence replace software engineers?
+- Gain insights into building large-scale infrastructure, operational excellence, and distributed systems design, drawn from over 20 years of developing Amazon and AWS.
+- Define the profile of the next-generation programmer—the "**Renaissance Developer**"—equipped to adapt to the wave of Generative AI.
 
-### Speaker List
+### Speaker
 
-- **Truong Bui** - Tech Lead, CMC Global
-- **Thien Lu** - Program Manager, FCAJ
-- **Phong Pham** - Program Manager, FCAJ
+- **Dr. Werner Vogels** - Vice President & Chief Technology Officer (CTO), Amazon.
 
-### Event Highlights
+### Key Highlights
 
-#### Buildathon Introduction & AI Agent Trends
+#### The Million-Dollar Outage & The Birth of Core Technology (DynamoDB)
 
-- Overview of the Buildathon rules, prize structure, and evaluation criteria.
-- The concept of Agentic AI: Transitioning from standard Generative AI models (text-based responses) to AI Agents capable of autonomous reasoning, planning, and task execution.
-- Architectural overview for building and deploying AI Agents within the AWS Cloud ecosystem.
+- **Lessons from an overload incident:** Decades ago, during the year's peak shopping day (December 12), Amazon's relational database system (RAC) became overloaded and crashed completely for a full day, resulting in millions of dollars in losses.
+- **Real-world behavior analysis:** Amazon discovered that 70% of data queries were simple Key-Value operations (such as retrieving a shopping cart), 20% involved single tables, and only 10% actually required an RDBMS.
+- **Homegrown technology:** Relying on off-the-shelf commercial software solutions posed significant risks when operating at hyperscale. This lesson drove Amazon to develop its own proprietary key-value database—the precursor to today's **Dynamo** and **DynamoDB**.
 
-#### Networking & Team Formation (Ice-breaking)
+#### 4 Pillars of Operational Excellence
 
-- Networking activities to help participants find teammates with complementary skills (Frontend, Backend, Cloud, Data/AI).
-- Quick discussions on proposed competition ideas, featuring initial feedback from the mentor team.
+- **Measuring at the 99.9th Percentile (P99.9):** Avoid using medians, as they overlook the worst user experiences. Optimization must target the P99.9 level to elevate the entire performance profile.
+- **"Everything Fails All the Time" Philosophy:** Architect systems to withstand the failure of one or two data centers without service disruption.
+- **"GameDays" Culture:** Proactively disconnect live production data centers to drill and validate automated failover capabilities and data synchronization.
+- **Inverting the IT Economic Model:** AWS pioneered the "Pay-as-you-go" model, compelling cloud providers to continuously deliver superior service to retain customers.
 
-#### Talk Show: Building a Career in Cloud & AI
+#### The Profile of a "Renaissance Developer"
 
-- Analysis of the current labor market landscape and recruitment trends for Cloud & AI professionals. - Personal development roadmap: From foundational knowledge to professional AWS certifications (e.g., AWS Certified Solutions Architect, AWS Certified AI Practitioner).
-- Insights and real-world experience shared by experts working on global-scale Cloud/AI projects at CMC Global.
+To avoid being replaced by AI, developers must cultivate five core qualities:
 
-#### Q&A Session
+- **Curiosity & Eagerness to Learn:** Continuous learning is a lifelong commitment, given the ever-changing landscape of languages ​​and frameworks.
+- **Systems Thinking:** The ability to grasp the big picture of how microservices interact at scale, rather than focusing solely on isolated modules.
+- **Ownership:** AI can generate code, but humans remain responsible for production bugs, security vulnerabilities, and architectural integrity.
+- **T-Shaped Expertise:** Deepening expertise in one specific area while maintaining broad knowledge across related domains (UI, business logic, databases).
+- **Communication Skills:** The ability to distill real-world business problems from trend-driven technical requirements and explain technical trade-offs to stakeholders.
 
-- Detailed answers to technical questions regarding AWS AI/ML services.
-- Comprehensive information on the upcoming stages of the Buildathon and technical evaluation criteria.
+#### AI as a Catalyst – Humans as the Unchanging Core
 
-#### Hands-on Practice (AI Agent Challenge)
-
-- **Prompt Engineering:** Techniques for optimizing prompts to ensure AI generates accurate results in the required format.
-- **RAG (Retrieval-Augmented Generation):** Integrating proprietary enterprise or user data into AI models to mitigate "hallucinations."
-- **AWS Knowledge Bases:** Utilizing AWS's automated knowledge storage and retrieval services to build a memory base for the AI ​​Agent.
-- Hands-on creation of a fully functional **mini AI Agent** during the workshop, with one-on-one support from mentors.
-
-#### Mock Interview Session
-
-- Simulation of actual interview processes for roles such as Cloud Engineer, DevOps Engineer, Data Engineer, and Solutions Architect.
-- Direct feedback from recruitment and technical experts regarding strengths and areas for improvement in both CVs and interview performance.
+- AI accelerates the prototyping cycle from weeks to hours, acting as a "natural language compiler."
+- However, AI outputs still require human review regarding security, edge cases, and performance.
+- While AI automates repetitive tasks, **human judgment, creativity, empathy, and professional pride** remain irreplaceable.
 
 ### Key Takeaways
 
-#### Technology Mindset & Knowledge
+#### Technical & Operational Mindset
 
-- **Shifting to an AI Mindset:** Understanding the distinction between traditional chatbots and AI Agents capable of automating business processes. - **Practical RAG Architecture:** Understand how to integrate Vector Databases, LLMs, and enterprise data to build secure, accurate AI solutions.
-- **Selecting the Right Cloud Services:** Learn how to combine AWS services to optimize both cost and performance when deploying AI models.
+- **Look beyond averages:** Optimize systems at the P99 or P99.9 level to ensure a positive experience for every customer.
+- **Design for failure:** Build systems with the assumption that any hardware or network component could fail at any moment.
+- **Understand data fundamentals:** Analyze data retrieval needs accurately to select the right tool (e.g., Key-Value vs. Relational) and avoid wasting resources.
 
-#### Technical Skills
+#### Personal Development
 
-- Ability to design workflows for AI Agents on AWS.
-- Skills in configuring **Knowledge Bases** and accurately connecting data sources.
-- Techniques for crafting optimized prompts for complex tasks requiring multi-step reasoning.
+- **Overcoming the fear of AI:** AI will not replace humans; however, those who know how to use AI and possess a systems-thinking mindset will replace those who do not.
+- **Embracing Admiral Grace Hopper’s quote:** "The most dangerous phrase in the language is, 'We’ve always done it this way.'"
 
-#### Career Guidance
+#### Workplace Application
 
-- Gain insight into the candidate evaluation standards of major tech corporations like CMC Global.
-- Identify personal knowledge gaps through mock interviews and create a targeted learning plan.
-
-### Workplace Application
-
-- **Participate in the Buildathon:** Refine project ideas with your team by applying the RAG and AI Agent concepts you have learned.
-- **Implement AI Agents:** Explore integrating AI Agents to automate internal support or customer service processes.
-- **Optimize Development Workflows:** Leverage AWS Cloud knowledge to package and deploy AI applications more efficiently.
-- **Career Preparation:** Update your CV, add hands-on AI/Cloud projects, and register for relevant AWS certifications.
+- **Implementing P99.9 Latency:** Adjusting the monitoring approach for current projects by focusing on high-percentile metrics.
+- **Integrating AI as an Assistant:** Leveraging AI to generate boilerplate code and rapid prototypes, while dedicating more time to security reviews, edge cases, and architectural design.
+- **Cultivating a T-shaped mindset:** Proactively acquiring knowledge regarding the business domain and adjacent technical layers to communicate more effectively with stakeholders.
 
 ### Event Experience
 
-Participating in the **Buildathon Kickoff: Code the Future with CMC Global** event at the Bitexco Financial Tower is a highly dynamic experience that delivers significant practical value for your professional development journey. Some memorable highlights:
+Hearing directly from Dr. Werner Vogels—a titan in the fields of cloud computing and distributed systems—was a deeply inspiring experience:
 
-#### A vibrant tech atmosphere and open networking opportunities; learning from highly qualified speakers
-- The event brought together a large number of tech enthusiasts and leading experts. The ice-breaking session made it easy for me to find like-minded peers to form a team for the competition.
-- The chance to interact directly with and receive advice from experienced professionals CMC Global and AWS provided me with a much more practical perspective than learning theory alone.
+#### Candor and a practical vision
+- Hearing firsthand the "hard-learned lessons" from Amazon's multi-million-dollar website outage years ago gave me a profound understanding of the origins of modern cloud services like DynamoDB.
+- Werner’s approach to dispelling fears about AI was compelling: he did not deny AI's power but positioned it correctly as a supporting tool, emphasizing that true capability lies in architectural mindset and an engineer's professional integrity.
 
-#### High-Quality Hands-on Experience
-- The AI ​​Agent Challenge practical session was designed to be highly intuitive. Building a mini AI application from scratch using RAG and AWS Knowledge Bases—under the dedicated guidance of mentors—helped me quickly grasp the underlying technical concepts.
-- I received immediate answers to any issues encountered while working through the labs.
-
-#### Exceptional Value from the Mock Interview
-The mock interview session was an incredibly valuable experience. Not only did I get to tackle in-depth technical questions, but I also received candid, sincere feedback on my self-presentation and how to refine my CV to impress recruiters.
+#### A realistic perspective on software development
+The session helped move beyond the "just write code" mentality. To advance, an engineer must evolve into a **Renaissance Developer**—someone capable of bridging the gap between technology and business value.
 
 #### Key Takeaways
-- AI Agents represent the next wave of technology; proactively mastering the skills to build AI Agents on cloud platforms like AWS creates a significant competitive advantage.
-- Teamwork and networking skills play a pivotal role when participating in short-term tech competitions like a Buildathon.
+Technologies, programming languages, and AI tools will inevitably change over time. The only enduring elements are **Systems Thinking**, **Operational Discipline**, and the **capacity for continuous self-learning**.
 
 #### Photos from the event
 ![alt text](../../images/fireside_chat.jpg)
