@@ -83,4 +83,5 @@ Công nghệ, ngôn ngữ lập trình hay công cụ AI sẽ luôn thay đổi 
 
 #### Một số hình ảnh khi tham gia sự kiện
 ![alt text](../../images/fireside_chat.jpg)
+![alt text](../../images/group_photo_with_dr_vogels.jpeg)
 > Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.

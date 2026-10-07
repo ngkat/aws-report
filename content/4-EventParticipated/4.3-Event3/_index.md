@@ -85,4 +85,5 @@ Technologies, programming languages, and AI tools will inevitably change over ti
 
 #### Photos from the event
 ![alt text](../../images/fireside_chat.jpg)
+![alt text](../../images/group_photo_with_dr_vogels.jpeg)
 > Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
