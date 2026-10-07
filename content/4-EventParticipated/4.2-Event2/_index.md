@@ -29,7 +29,8 @@ pre: "  4.2  "
 #### Building an AI-Ready Data Foundation (Data Foundation for Agentic AI)
 
 - The importance of enterprise data in training and operating AI Agents.
-- An introduction to core capabilities regarding the storage, governance, and integration of real-world business data to ensure accurate AI responses. #### Real-World Applications with Amazon Bedrock & AI Agents
+- An introduction to core capabilities regarding the storage, governance, and integration of real-world business data to ensure accurate AI responses.
+#### Real-World Applications with Amazon Bedrock & AI Agents
 
 - Techniques for successfully deploying **AI Agents** in enterprises, moving beyond the pilot phase to full production.
 - Leveraging **Amazon Bedrock** as an end-to-end platform to build, customize, and scale Generative AI applications.
