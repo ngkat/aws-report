@@ -1,126 +1,105 @@
 ---
 title: "Event 1"
-date: 2024-01-01
+date: 14-09-2026
 weight: 1
 chapter: false
-pre: " <b> 4.1. </b> "
+pre: "  4.1  "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
-
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Summary Report: “Buildrathon Kickoff: Code the Future with CMC Global”
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- Launch the "Buildathon" technology competition/challenge, organized by CMC Global in collaboration with partners.
+- Introduce and provide insights into cutting-edge technologies: AWS Cloud, Generative AI, and specifically Agentic AI (AI Agents).
+- Provide hands-on guidance on AI development techniques using AWS infrastructure (Prompt Engineering, RAG, Knowledge Bases).
+- Connect the tech community, offer career development guidance, and provide interview preparation support in the Cloud & AI sectors.
 
-### Speakers
+### Speaker List
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- **Truong Bui** - Tech Lead, CMC Global
+- **Thien Lu** - Program Manager, FCAJ
+- **Phong Pham** - Program Manager, FCAJ
 
-### Key Highlights
+### Event Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### Buildathon Introduction & AI Agent Trends
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+- Overview of the Buildathon rules, prize structure, and evaluation criteria.
+- The concept of Agentic AI: Transitioning from standard Generative AI models (text-based responses) to AI Agents capable of autonomous reasoning, planning, and task execution.
+- Architectural overview for building and deploying AI Agents within the AWS Cloud ecosystem.
 
-#### Transitioning to modern application architecture – Microservices
+#### Networking & Team Formation (Ice-breaking)
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+- Networking activities to help participants find teammates with complementary skills (Frontend, Backend, Cloud, Data/AI).
+- Quick discussions on proposed competition ideas, featuring initial feedback from the mentor team.
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+#### Talk Show: Building a Career in Cloud & AI
 
-#### Domain-Driven Design (DDD)
+- Analysis of the current labor market landscape and recruitment trends for Cloud & AI professionals. - Personal development roadmap: From foundational knowledge to professional AWS certifications (e.g., AWS Certified Solutions Architect, AWS Certified AI Practitioner).
+- Insights and real-world experience shared by experts working on global-scale Cloud/AI projects at CMC Global.
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+#### Q&A Session
 
-#### Event-Driven Architecture
+- Detailed answers to technical questions regarding AWS AI/ML services.
+- Comprehensive information on the upcoming stages of the Buildathon and technical evaluation criteria.
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+#### Hands-on Practice (AI Agent Challenge)
 
-#### Compute Evolution
+- **Prompt Engineering:** Techniques for optimizing prompts to ensure AI generates accurate results in the required format.
+- **RAG (Retrieval-Augmented Generation):** Integrating proprietary enterprise or user data into AI models to mitigate "hallucinations."
+- **AWS Knowledge Bases:** Utilizing AWS's automated knowledge storage and retrieval services to build a memory base for the AI ​​Agent.
+- Hands-on creation of a fully functional **mini AI Agent** during the workshop, with one-on-one support from mentors.
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+#### Mock Interview Session
 
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+- Simulation of actual interview processes for roles such as Cloud Engineer, DevOps Engineer, Data Engineer, and Solutions Architect.
+- Direct feedback from recruitment and technical experts regarding strengths and areas for improvement in both CVs and interview performance.
 
 ### Key Takeaways
 
-#### Design Mindset
+#### Technology Mindset & Knowledge
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+- **Shifting to an AI Mindset:** Understanding the distinction between traditional chatbots and AI Agents capable of automating business processes. - **Practical RAG Architecture:** Understand how to integrate Vector Databases, LLMs, and enterprise data to build secure, accurate AI solutions.
+- **Selecting the Right Cloud Services:** Learn how to combine AWS services to optimize both cost and performance when deploying AI models.
 
-#### Technical Architecture
+#### Technical Skills
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+- Ability to design workflows for AI Agents on AWS.
+- Skills in configuring **Knowledge Bases** and accurately connecting data sources.
+- Techniques for crafting optimized prompts for complex tasks requiring multi-step reasoning.
 
-#### Modernization Strategy
+#### Career Guidance
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+- Gain insight into the candidate evaluation standards of major tech corporations like CMC Global.
+- Identify personal knowledge gaps through mock interviews and create a targeted learning plan.
 
-### Applying to Work
+### Workplace Application
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+- **Participate in the Buildathon:** Refine project ideas with your team by applying the RAG and AI Agent concepts you have learned.
+- **Implement AI Agents:** Explore integrating AI Agents to automate internal support or customer service processes.
+- **Optimize Development Workflows:** Leverage AWS Cloud knowledge to package and deploy AI applications more efficiently.
+- **Career Preparation:** Update your CV, add hands-on AI/Cloud projects, and register for relevant AWS certifications.
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+Participating in the **Buildathon Kickoff: Code the Future with CMC Global** event at the Bitexco Financial Tower is a highly dynamic experience that delivers significant practical value for your professional development journey. Some memorable highlights:
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+#### A vibrant tech atmosphere and open networking opportunities; learning from highly qualified speakers
+- The event brought together a large number of tech enthusiasts and leading experts. The ice-breaking session made it easy for me to find like-minded peers to form a team for the competition.
+- The chance to interact directly with and receive advice from experienced professionals CMC Global and AWS provided me with a much more practical perspective than learning theory alone.
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+#### High-Quality Hands-on Experience
+- The AI ​​Agent Challenge practical session was designed to be highly intuitive. Building a mini AI application from scratch using RAG and AWS Knowledge Bases—under the dedicated guidance of mentors—helped me quickly grasp the underlying technical concepts.
+- I received immediate answers to any issues encountered while working through the labs.
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+#### Exceptional Value from the Mock Interview
+The mock interview session was an incredibly valuable experience. Not only did I get to tackle in-depth technical questions, but I also received candid, sincere feedback on my self-presentation and how to refine my CV to impress recruiters.
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+#### Key Takeaways
+- AI Agents represent the next wave of technology; proactively mastering the skills to build AI Agents on cloud platforms like AWS creates a significant competitive advantage.
+- Teamwork and networking skills play a pivotal role when participating in short-term tech competitions like a Buildathon.
 
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
-
-#### Some event photos
-*Add your event photos here*  
-
+#### Photos from the event
+![alt text](../../images/cmc.jpg)
 > Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
