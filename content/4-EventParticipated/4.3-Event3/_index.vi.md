@@ -1,107 +1,85 @@
 ---
-title: "Event 1"
-date: 26-09-2026
+title: "Event 3"
+date: 02-10-2026
 weight: 1
 chapter: false
-pre: "  4.1  "
+pre: "  4.3  "
 ---
 
-# Bài thu hoạch “Buildrathon Kickoff: Code the Future with CMC Global”
+# Bài thu hoạch “Fireside Chat with Dr. Werner”
 
 ### Mục Đích Của Sự Kiện
 
-- Khởi động cuộc thi/thử thách công nghệ Buildathon do CMC Global phối hợp cùng đối tác tổ chức.
-- Giới thiệu và định hướng các công nghệ tiên phong: AWS Cloud, Generative AI, và đặc biệt là Agentic AI (AI Agent).
-- Hướng dẫn thực hành trực tiếp các kỹ thuật xây dựng AI trên hạ tầng AWS (Prompt Engineering, RAG, Knowledge Bases).
-- Kết nối cộng đồng công nghệ, định hướng lộ trình phát triển sự nghiệp và hỗ trợ chuẩn bị phỏng vấn trong lĩnh vực Cloud & AI.
+- Experience a keynote address and fireside chat with **Dr. Werner Vogels** — Vice President and Chief Technology Officer (CTO) of Amazon.
+- Address a pivotal question regarding the future of the software industry in the AI ​​era: Will artificial intelligence replace software engineers?
+- Gain insights into building large-scale infrastructure, operational excellence, and distributed systems design, drawn from over 20 years of developing Amazon and AWS.
+- Define the profile of the next-generation programmer—the "**Renaissance Developer**"—equipped to adapt to the wave of Generative AI.
 
-### Danh Sách Diễn Giả
+### Speaker
 
-- **Truong Bui** - Tech Lead CMC Global
-- **Thien Lu** - Program Manager FCAJ
-- **Phong Pham** - Program Manager FCAJ
+- **Dr. Werner Vogels** - Vice President & Chief Technology Officer (CTO), Amazon.
 
-### Nội Dung Nổi Bật
+### Key Highlights
 
-#### Giới Thiệu Cuộc Thi Buildathon & Xu Hướng AI Agent
+#### The Million-Dollar Outage & The Birth of Core Technology (DynamoDB)
 
-- Giới thiệu tổng quan về thể lệ, cơ cấu giải thưởng và tiêu chí đánh giá của cuộc thi Buildathon.
-- Khái niệm Agentic AI: Chuyển đổi từ mô hình Generative AI thông thường (chỉ trả lời văn bản) sang AI Agent có khả năng tự suy luận, lập kế hoạch và thực thi tác vụ.
-- Kiến trúc tổng quan khi xây dựng và triển khai AI Agent trên hệ sinh thái AWS Cloud.
+- **Lessons from an overload incident:** Decades ago, during the year's peak shopping day (December 12), Amazon's relational database system (RAC) became overloaded and crashed completely for a full day, resulting in millions of dollars in losses.
+- **Real-world behavior analysis:** Amazon discovered that 70% of data queries were simple Key-Value operations (such as retrieving a shopping cart), 20% involved single tables, and only 10% actually required an RDBMS.
+- **Homegrown technology:** Relying on off-the-shelf commercial software solutions posed significant risks when operating at hyperscale. This lesson drove Amazon to develop its own proprietary key-value database—the precursor to today's **Dynamo** and **DynamoDB**.
 
-#### Giao Lưu & Lập Đội (Ice-breaking)
+#### 4 Pillars of Operational Excellence
 
-- Hoạt động kết nối các cá nhân tham gia để tìm kiếm đồng đội có kỹ năng bù trừ (Frontend, Backend, Cloud, Data/AI).
-- Thảo luận nhanh về ý tưởng đề xuất cho cuộc thi dưới sự tham góp ý ban đầu từ đội ngũ Mentor.
+- **Measuring at the 99.9th Percentile (P99.9):** Avoid using medians, as they overlook the worst user experiences. Optimization must target the P99.9 level to elevate the entire performance profile.
+- **"Everything Fails All the Time" Philosophy:** Architect systems to withstand the failure of one or two data centers without service disruption.
+- **"GameDays" Culture:** Proactively disconnect live production data centers to drill and validate automated failover capabilities and data synchronization.
+- **Inverting the IT Economic Model:** AWS pioneered the "Pay-as-you-go" model, compelling cloud providers to continuously deliver superior service to retain customers.
 
-#### Talkshow: Building a Career in Cloud & AI
+#### The Profile of a "Renaissance Developer"
 
-- Phân tích bức tranh thị trường lao động và xu hướng tuyển dụng nhân sự Cloud & AI hiện nay.
-- Lộ trình phát triển bản thân: Từ kiến thức nền tảng đến các chứng chỉ chuyên môn của AWS (AWS Certified Solutions Architect, AWS Certified AI Practitioner,...).
-- Chia sẻ kinh nghiệm thực chiến từ các chuyên gia khi làm việc trong các dự án Cloud/AI quy mô toàn cầu tại CMC Global.
+To avoid being replaced by AI, developers must cultivate five core qualities:
 
-#### Phiên Hỏi Đáp (Q&A Session)
+- **Curiosity & Eagerness to Learn:** Continuous learning is a lifelong commitment, given the ever-changing landscape of languages ​​and frameworks.
+- **Systems Thinking:** The ability to grasp the big picture of how microservices interact at scale, rather than focusing solely on isolated modules. - **Ownership:** AI can generate code, but humans remain responsible for production bugs, security vulnerabilities, and architectural integrity.
+- **T-Shaped Expertise:** Deepening expertise in one specific area while maintaining broad knowledge across related domains (UI, business logic, databases).
+- **Communication Skills:** The ability to distill real-world business problems from trend-driven technical requirements and explain technical trade-offs to stakeholders.
 
-- Giải đáp chi tiết các thắc mắc về kỹ thuật khi làm việc với các dịch vụ AI/ML của AWS.
-- Cung cấp thông tin chi tiết về các vòng thi tiếp theo của Buildathon và các tiêu chí chấm điểm kỹ thuật.
+#### AI as a Catalyst – Humans as the Unchanging Core
 
-#### Thực Hành Trực Tiếp (Hands-on - AI Agent Challenge)
+- AI accelerates the prototyping cycle from weeks to hours, acting as a "natural language compiler."
+- However, AI outputs still require human review regarding security, edge cases, and performance.
+- While AI automates repetitive tasks, human judgment, creativity, empathy, and professional pride remain irreplaceable.
 
-- **Prompt Engineering:** Phương pháp tối ưu câu lệnh để AI trả ra kết quả chính xác và đúng định dạng yêu cầu.
-- **RAG (Retrieval-Augmented Generation):** Tích hợp dữ liệu riêng của doanh nghiệp/người dùng vào mô hình AI để tránh hiện tượng "ảo giác" (hallucination).
-- **AWS Knowledge Bases:** Sử dụng dịch vụ lưu trữ và truy xuất tri thức tự động trên AWS để xây dựng bộ nhớ cho AI Agent.
-- Thực hành dựng một **AI Agent mini** hoàn chỉnh ngay tại workshop dưới sự hỗ trợ 1-on-1 của Mentor.
+### Key Takeaways
 
-#### Phỏng Vấn Thử (Mock Interview Session)
+#### Technical & Operational Mindset
 
-- Mô phỏng quy trình phỏng vấn thực tế cho các vị trí: Cloud Engineer, DevOps Engineer, Data Engineer, Solution Architect.
-- Nhận phản hồi trực tiếp (feedback) từ các chuyên gia tuyển dụng và kĩ thuật về điểm mạnh, điểm cần cải thiện trong cả CV lẫn kỹ năng trả lời phỏng vấn.
+- **Look beyond averages:** Optimize systems at the P99 or P99.9 level to ensure a positive experience for every customer.
+- **Design for failure:** Build systems with the assumption that any hardware or network component could fail at any moment.
+- **Understand data fundamentals:** Analyze data retrieval needs accurately to select the right tool (e.g., Key-Value vs. Relational) and avoid wasting resources. #### Personal Development
 
-### Những Gì Học Được
+- **Overcoming the fear of AI:** AI will not replace humans; however, those who know how to use AI and possess a systems-thinking mindset will replace those who do not.
+- **Embracing Admiral Grace Hopper’s quote:** "The most dangerous phrase in the language is, 'We’ve always done it this way.'"
 
-#### Tư Duy & Kiến Thức Công Nghệ
+#### Workplace Application
 
-- **Chuyển dịch tư duy AI:** Nắm rõ sự khác biệt giữa Chatbot truyền thống và AI Agent có khả năng tự động hóa quy trình kinh doanh.
-- **Kiến trúc RAG thực tế:** Hiểu cách kết hợp giữa Vector Database, LLMs và dữ liệu doanh nghiệp để tạo ra các giải pháp AI an toàn và chính xác.
-- **Lựa chọn dịch vụ Cloud phù hợp:** Biết cách kết hợp các dịch vụ trên AWS để tối ưu chi phí và hiệu năng khi vận hành mô hình AI.
+- **Implementing P99.9 Latency:** Adjusting the monitoring approach for current projects by focusing on high-percentile metrics.
+- **Integrating AI as an Assistant:** Leveraging AI to generate boilerplate code and rapid prototypes, while dedicating more time to security reviews, edge cases, and architectural design.
+- **Cultivating a T-shaped mindset:** Proactively acquiring knowledge regarding the business domain and adjacent technical layers to communicate more effectively with stakeholders.
 
-#### Kỹ Năng Thực Hành Kỹ Thuật
+### Event Experience
 
-- Khả năng tự thiết kế các luồng xử lý (workflows) cho AI Agent trên AWS.
-- Kỹ năng cấu hình **Knowledge Bases** và kết nối nguồn dữ liệu đầu vào chuẩn xác.
-- Cách viết Prompt tối ưu cho các bài toán phức tạp đòi hỏi suy luận nhiều bước.
+Hearing directly from Dr. Werner Vogels—a titan in the fields of cloud computing and distributed systems—was a deeply inspiring experience:
 
-#### Định Hướng Nghề Nghiệp
+#### Candor and a practical vision
+- Hearing firsthand the "hard-learned lessons" from Amazon's multi-million-dollar website outage years ago gave me a profound understanding of the origins of modern cloud services like DynamoDB.
+- Werner’s approach to dispelling fears about AI was compelling: he did not deny AI's power but positioned it correctly as a supporting tool, emphasizing that true capability lies in architectural mindset and an engineer's professional integrity.
 
-- Hiểu rõ tiêu chuẩn đánh giá ứng viên của các tập đoàn công nghệ lớn như CMC Global.
-- Nhận diện được khoảng trống kiến thức (gap analysis) của bản thân thông qua phiên Mock Interview để lên kế hoạch học tập bổ sung.
+#### A realistic perspective on software development
+The session helped move beyond the "just write code" mentality. To advance, an engineer must evolve into a **Renaissance Developer**—someone capable of bridging the gap between technology and business value.
 
-### Ứng Dụng Vào Công Việc
-
-- **Tham gia cuộc thi Buildathon:**  Hoàn thiện ý tưởng bài thi cùng đồng đội dựa trên các kiến thức RAG và AI Agent đã tiếp thu.
-- **Áp dụng AI Agent vào dự án:** Nghiên cứu đưa AI Agent vào tự động hóa các quy trình hỗ trợ nội bộ hoặc chăm sóc khách hàng.
-- **Tối ưu hóa workflow phát triển:** Sử dụng kiến thức AWS Cloud để đóng gói và triển khai ứng dụng AI nhanh chóng hơn.   
-- **Chuẩn bị hành trang sự nghiệp:** Cập nhật lại CV, bổ sung các dự án AI/Cloud thực chiến và đăng ký thi các chứng chỉ AWS phù hợp.
-
-### Trải nghiệm trong event
-
-Tham gia sự kiện **Buildrathon Kickoff: Code the Future with CMC Global** tại tòa nhà Bitexco là một trải nghiệm cực kỳ năng động và mang lại nhiều giá trị thực tế cho lộ trình phát triển bản thân. Một số điểm nhấn đáng nhớ:
-
-#### Không khí công nghệ và cơ hội kết nối rộng mởHọc hỏi từ các diễn giả có chuyên môn cao
-- Sự kiện quy tụ đông đảo các bạn trẻ đam mê công nghệ cùng các chuyên gia hàng đầu. Phần Ice-breaking giúp tôi dễ dàng tìm kiếm những người bạn đồng hành hợp cạ để lập team tham gia cuộc thi.
-- Được trực tiếp giao lưu, lắng nghe tư vấn từ các anh chị đi trước tại CMC Global và AWS, giúp tôi có cái nhìn thực tế hơn rất nhiều so với việc chỉ học lý thuyết.
-
-#### Trải nghiệm Hands-on chất lượng
-- Phần thực hành AI Agent Challenge được thiết kế rất trực quan. Việc tự tay dựng một ứng dụng AI mini sử dụng RAG và AWS Knowledge Bases dưới sự hướng dẫn tận tình của các Mentors giúp tôi nhanh chóng nắm bắt được bản chất kỹ thuật.
-- Được giải đáp ngay lập tức các vướng mắc trong quá trình thao tác bài lab.
-
-#### Giá trị vượt mong đợi từ Mock InterviewỨng dụng công cụ hiện đại
-Phiên Mock Interview là một trải nghiệm vô cùng đắt giá. Tôi không chỉ được thử sức trả lời các câu hỏi kỹ thuật chuyên sâu mà còn nhận được những góp ý thẳng thắn, chân thành về cách thể hiện bản thân và định hướng cải thiện CV để ghi điểm với nhà tuyển dụng.
-
-#### Bài học rút ra
-- AI Agent chính là làn sóng tiếp theo của công nghệ, việc chủ động nắm bắt kỹ năng xây dựng AI Agent trên nền tảng Cloud như AWS sẽ tạo ra lợi thế cạnh tranh rất lớn.
-- Kỹ năng làm việc nhóm (Teamwork) và kết nối (Networking) đóng vai trò then chốt khi tham gia các cuộc thi công nghệ ngắn hạn như Buildathon.
+#### Key Takeaways
+Technologies, programming languages, and AI tools will inevitably change over time. The only enduring elements are **Systems Thinking**, **Operational Discipline**, and the **capacity for continuous self-learning**.
 
 #### Một số hình ảnh khi tham gia sự kiện
-![alt text](../../images/cmc.jpg)
+![alt text](../../images/fireside_chat.jpg)
 > Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.

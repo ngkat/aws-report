@@ -1,12 +1,12 @@
 ---
-title: "Event 1"
-date: 26-09-2026
+title: "Event 3"
+date: 02-10-2026
 weight: 1
 chapter: false
-pre: "  4.1  "
+pre: "  4.3  "
 ---
 
-# Summary Report: “Buildrathon Kickoff: Code the Future with CMC Global”
+# Summary Report: “Fireside Chat with Dr. Werner”
 
 ### Event Objectives
 
@@ -101,5 +101,5 @@ The mock interview session was an incredibly valuable experience. Not only did I
 - Teamwork and networking skills play a pivotal role when participating in short-term tech competitions like a Buildathon.
 
 #### Photos from the event
-![alt text](../../images/cmc.jpg)
+![alt text](../../images/fireside_chat.jpg)
 > Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
