@@ -15,11 +15,11 @@ pre: "  4.3  "
 - Học hỏi các bài học kinh nghiệm trong xây dựng hạ tầng quy mô lớn, kỷ luật vận hành (operational excellence) và tư duy thiết kế hệ thống phân tán qua hơn 20 năm phát triển Amazon & AWS.
 - Định hình chân dung của người lập trình viên thế hệ mới — "**Renaissance Developer**" (Nhà phát triển thời kỳ Phục hưng) để thích ứng với làn sóng Generative AI.
 
-### Speaker
+### Danh Sách Diễn Giả
 
 - **Dr. Werner Vogels** - Vice President & Chief Technology Officer (CTO), Amazon.
 
-### Key Highlights
+### Nội Dung Nổi Bật
 
 #### Sự Cố Triệu Đô & Sự Ra Đời Của Công Nghệ Cốt Lõi (DynamoDB)
 
