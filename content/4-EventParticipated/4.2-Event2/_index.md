@@ -79,6 +79,5 @@ Attending the **AWS Cloud and AI Day Hanoi - Watch Party at the AWS Ho Chi Minh 
 - **Agentic AI** and **Data Foundation** are two critical pillars that Cloud and AI engineers should focus on mastering in the near future.  
 
 #### Some event photos
-*Add your event photos here*  
-
+![alt text](../../images/aws_cloud_day.jpg)
 > Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
