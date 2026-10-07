@@ -6,116 +6,79 @@ chapter: false
 pre: "  4.2  "
 ---
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+# Bài thu hoạch “AWS Cloud and AI Day Hanoi - Watch Party: Ho Chi Minh City”
 
 ### Mục Đích Của Sự Kiện
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+- Tạo không gian kết nối cho cộng đồng lập trình viên, kỹ sư hạ tầng và lãnh đạo công nghệ tại TP.HCM theo dõi trực tuyến sự kiện lớn nhất trong năm AWS Cloud & AI Day diễn ra tại Hà Nội.
+- Cập nhật các xu hướng và chiến lược công nghệ tiên phong từ AWS: Generative AI, Agentic AI, Hiện đại hóa hạ tầng (Modernization) và Quản trị dữ liệu (Data Foundation).
+- Thảo luận, trao đổi trực tiếp và mở rộng mạng lưới quan hệ (Networking) giữa các thành viên cộng đồng AWS Builders, Student Builders và các chuyên gia giải pháp tại khu vực phía Nam.
 
 ### Danh Sách Diễn Giả
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
-
+- **AWS Leadership & Technical Speakers** - Các diễn giả chính kết nối trực tiếp từ điểm cầu sự kiện chính tại JW Marriott Hà Nội.
+- **AWS Solutions Architects & Community Leaders** - Đội ngũ chuyên gia kỹ thuật AWS phụ trách điều phối và hỗ trợ thảo luận tại văn phòng AWS TP.HCM.
 ### Nội Dung Nổi Bật
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### Keynote: Định Hướng Tương Lai Với Cloud & AI
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+- Bức tranh toàn cảnh về làn sóng **Agentic AI** và cách công nghệ này đang định hình lại việc tự động hóa quy trình nghiệp vụ của doanh nghiệp.
+- Tầm nhìn của AWS trong việc xây dựng nền tảng đám mây an toàn, linh hoạt và tối ưu chi phí cho các mô hình Generative AI thế hệ mới.
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+#### Xây Dựng Nền Tảng Dữ Liệu Sẵn Sàng Cho AI (Data Foundation for Agentic AI)
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+- Tầm quan trọng của dữ liệu doanh nghiệp trong việc huấn luyện và vận hành AI Agent.
+- Giới thiệu các năng lực cốt lõi về lưu trữ, quản trị và tích hợp dữ liệu kinh doanh thực tế để AI đưa ra phản hồi chuẩn xác.
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+#### Ứng Dụng Thực Tế Với Amazon Bedrock & AI Agents
 
-#### Domain-Driven Design (DDD)
+- Kỹ thuật triển khai **AI Agents** thành công trong doanh nghiệp, giúp vượt qua rào cản thử nghiệm (stall pilot) để đưa vào sản xuất (production).
+- Sử dụng **Amazon Bedrock** làm nền tảng end-to-end để xây dựng, tùy biến và mở rộng các ứng dụng Generative AI.
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+#### Tự Động Hóa Phát Triển Và Hiện Đại Hóa Hạ Tầng
 
-#### Event-Driven Architecture
+- Ứng dụng **Agent Toolkit** và các công cụ AI coding agent trong việc hỗ trợ lập trình viên tra cứu tài liệu và truy cập tài nguyên AWS.
+- Chiến lược chuyển đổi các hệ thống kế thừa (legacy systems), giảm nợ kỹ thuật (technical debt) và hiện đại hóa ứng dụng lên Serverless/Containers.
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+#### Thảo Luận Bàn Tròn & Networking Tại TP.HCM
 
-#### Compute Evolution
-
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
-
-#### Amazon Q Developer
-
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+- Thảo luận trực tiếp tại điểm cầu TP.HCM về khả năng áp dụng các giải pháp AWS vào thị trường thực tế phía Nam.
+- Giao lưu giữa các cộng đồng Student Builders, Developer và IT Leads.
 
 ### Những Gì Học Được
 
-#### Tư Duy Thiết Kế
+#### Tư Duy Thiết Kế & Chiến Lược
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+- **Data-centric AI strategy:** Bắt đầu xây dựng AI từ việc làm sạch và chuẩn hóa nền tảng dữ liệu nội bộ.
+- **Agentic Automation:** Chuyển đổi tư duy từ chatbot tra cứu thông tin sang AI Agent có năng lực tự ra quyết định và thực thi công việc.
 
 #### Kiến Trúc Kỹ Thuật
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
+- Cách kết hợp các dịch vụ dữ liệu AWS để làm giàu tri thức cho mô hình AI.
+- Tối ưu hóa SDLC bằng cách tích hợp các AI Assistant và AI Agent vào quy trình viết code, testing và bảo trì hệ thống.
 
-#### Chiến Lược Hiện Đại Hóa
+#### Ứng Dụng Vào Công Việc
 
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
-
-### Ứng Dụng Vào Công Việc
-
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+- **Đánh giá lại chiến lược dữ liệu:** Rà soát hệ thống dữ liệu hiện tại của dự án để chuẩn bị cho việc tích hợp AI Agents.
+- **Thử nghiệm Amazon Bedrock:** Đăng ký và tạo thử các PoC (Proof of Concept) cho ứng dụng Generative AI.
+- **Đẩy mạnh kết nối cộng đồng:** Tham gia sâu hơn vào các hoạt động của AWS User Group/Student Builders tại TP.HCM để học hỏi kinh nghiệm thực chiến.
 
 ### Trải nghiệm trong event
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
+Tham gia sự kiện **AWS Cloud and AI Day Hanoi - Watch Party tại văn phòng AWS TP.HCM** là một trải nghiệm kết hợp tuyệt vời giữa việc tiếp thu kiến thức quy mô lớn và không khí kết nối ấm cúng. Một số trải nghiệm nổi bật:
 
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
+#### Không khí xem livestream tập trung và tương tác cao
+- Dù theo dõi qua màn hình từ điểm cầu Hà Nội, không khí tại văn phòng AWS TP.HCM vẫn rất sôi động nhờ sự điều phối của đội ngũ host.
+- Các đoạn phức tạp trong phiên Keynote hay Technical sessions được các chuyên gia tại chỗ giải thích và làm rõ ngay trong giờ giải lao.
 
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
-
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
-
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
+#### Cơ hội Networking chất lượng tại khu vực phía Nam
+- Điểm cầu Watch Party quy tụ nhiều anh chị Cloud Architect, Tech Lead cũng như các bạn sinh viên tài năng tại TP.HCM.
+- Dễ dàng trao đổi các bài toán thực tế mà doanh nghiệp phía Nam đang gặp phải khi triển khai Cloud & AI.
 
 #### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
+- Sự kiện Watch Party là mô hình rất hiệu quả để cập nhật công nghệ mới nhất mà không cần phải di chuyển xa.
+- **Agentic AI** và **Data Foundation** là hai trụ cột chính mà bất kỳ kỹ sư Cloud/AI nào cũng cần tập trung trau dồi trong thời gian tới.
 
 #### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
+![alt text](../../images/aws_cloud_day.jpg)
 > Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
