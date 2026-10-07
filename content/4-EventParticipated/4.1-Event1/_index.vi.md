@@ -1,125 +1,107 @@
 ---
 title: "Event 1"
-date: 2024-01-01
+date: 14-09-2026
 weight: 1
 chapter: false
-pre: " <b> 4.1. </b> "
+pre: "  4.1  "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+# Bài thu hoạch “Buildrathon Kickoff: Code the Future with CMC Global”
 
 ### Mục Đích Của Sự Kiện
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+- Khởi động cuộc thi/thử thách công nghệ Buildathon do CMC Global phối hợp cùng đối tác tổ chức.
+- Giới thiệu và định hướng các công nghệ tiên phong: AWS Cloud, Generative AI, và đặc biệt là Agentic AI (AI Agent).
+- Hướng dẫn thực hành trực tiếp các kỹ thuật xây dựng AI trên hạ tầng AWS (Prompt Engineering, RAG, Knowledge Bases).
+- Kết nối cộng đồng công nghệ, định hướng lộ trình phát triển sự nghiệp và hỗ trợ chuẩn bị phỏng vấn trong lĩnh vực Cloud & AI.
 
 ### Danh Sách Diễn Giả
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+- **Truong Bui** - Tech Lead CMC Global
+- **Thien Lu** - Program Manager FCAJ
+- **Phong Pham** - Program Manager FCAJ
 
 ### Nội Dung Nổi Bật
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### Giới Thiệu Cuộc Thi Buildathon & Xu Hướng AI Agent
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+- Giới thiệu tổng quan về thể lệ, cơ cấu giải thưởng và tiêu chí đánh giá của cuộc thi Buildathon.
+- Khái niệm Agentic AI: Chuyển đổi từ mô hình Generative AI thông thường (chỉ trả lời văn bản) sang AI Agent có khả năng tự suy luận, lập kế hoạch và thực thi tác vụ.
+- Kiến trúc tổng quan khi xây dựng và triển khai AI Agent trên hệ sinh thái AWS Cloud.
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+#### Giao Lưu & Lập Đội (Ice-breaking)
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+- Hoạt động kết nối các cá nhân tham gia để tìm kiếm đồng đội có kỹ năng bù trừ (Frontend, Backend, Cloud, Data/AI).
+- Thảo luận nhanh về ý tưởng đề xuất cho cuộc thi dưới sự tham góp ý ban đầu từ đội ngũ Mentor.
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+#### Talkshow: Building a Career in Cloud & AI
 
-#### Domain-Driven Design (DDD)
+- Phân tích bức tranh thị trường lao động và xu hướng tuyển dụng nhân sự Cloud & AI hiện nay.
+- Lộ trình phát triển bản thân: Từ kiến thức nền tảng đến các chứng chỉ chuyên môn của AWS (AWS Certified Solutions Architect, AWS Certified AI Practitioner,...).
+- Chia sẻ kinh nghiệm thực chiến từ các chuyên gia khi làm việc trong các dự án Cloud/AI quy mô toàn cầu tại CMC Global.
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+#### Phiên Hỏi Đáp (Q&A Session)
 
-#### Event-Driven Architecture
+- Giải đáp chi tiết các thắc mắc về kỹ thuật khi làm việc với các dịch vụ AI/ML của AWS.
+- Cung cấp thông tin chi tiết về các vòng thi tiếp theo của Buildathon và các tiêu chí chấm điểm kỹ thuật.
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+#### Thực Hành Trực Tiếp (Hands-on - AI Agent Challenge)
 
-#### Compute Evolution
+- **Prompt Engineering:** Phương pháp tối ưu câu lệnh để AI trả ra kết quả chính xác và đúng định dạng yêu cầu.
+- **RAG (Retrieval-Augmented Generation):** Tích hợp dữ liệu riêng của doanh nghiệp/người dùng vào mô hình AI để tránh hiện tượng "ảo giác" (hallucination).
+- **AWS Knowledge Bases:** Sử dụng dịch vụ lưu trữ và truy xuất tri thức tự động trên AWS để xây dựng bộ nhớ cho AI Agent.
+- Thực hành dựng một **AI Agent mini** hoàn chỉnh ngay tại workshop dưới sự hỗ trợ 1-on-1 của Mentor.
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
+#### Phỏng Vấn Thử (Mock Interview Session)
 
-#### Amazon Q Developer
-
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+- Mô phỏng quy trình phỏng vấn thực tế cho các vị trí: Cloud Engineer, DevOps Engineer, Data Engineer, Solution Architect.
+- Nhận phản hồi trực tiếp (feedback) từ các chuyên gia tuyển dụng và kĩ thuật về điểm mạnh, điểm cần cải thiện trong cả CV lẫn kỹ năng trả lời phỏng vấn.
 
 ### Những Gì Học Được
 
-#### Tư Duy Thiết Kế
+#### Tư Duy & Kiến Thức Công Nghệ
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+- **Chuyển dịch tư duy AI:** Nắm rõ sự khác biệt giữa Chatbot truyền thống và AI Agent có khả năng tự động hóa quy trình kinh doanh.
+- **Kiến trúc RAG thực tế:** Hiểu cách kết hợp giữa Vector Database, LLMs và dữ liệu doanh nghiệp để tạo ra các giải pháp AI an toàn và chính xác.
+- **Lựa chọn dịch vụ Cloud phù hợp:** Biết cách kết hợp các dịch vụ trên AWS để tối ưu chi phí và hiệu năng khi vận hành mô hình AI.
 
-#### Kiến Trúc Kỹ Thuật
+#### Kỹ Năng Thực Hành Kỹ Thuật
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
+- Khả năng tự thiết kế các luồng xử lý (workflows) cho AI Agent trên AWS.
+- Kỹ năng cấu hình **Knowledge Bases** và kết nối nguồn dữ liệu đầu vào chuẩn xác.
+- Cách viết Prompt tối ưu cho các bài toán phức tạp đòi hỏi suy luận nhiều bước.
 
-#### Chiến Lược Hiện Đại Hóa
+#### Định Hướng Nghề Nghiệp
 
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+- Hiểu rõ tiêu chuẩn đánh giá ứng viên của các tập đoàn công nghệ lớn như CMC Global.
+- Nhận diện được khoảng trống kiến thức (gap analysis) của bản thân thông qua phiên Mock Interview để lên kế hoạch học tập bổ sung.
 
 ### Ứng Dụng Vào Công Việc
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+- **Tham gia cuộc thi Buildathon:**  Hoàn thiện ý tưởng bài thi cùng đồng đội dựa trên các kiến thức RAG và AI Agent đã tiếp thu.
+- **Áp dụng AI Agent vào dự án:** Nghiên cứu đưa AI Agent vào tự động hóa các quy trình hỗ trợ nội bộ hoặc chăm sóc khách hàng.
+- **Tối ưu hóa workflow phát triển:** Sử dụng kiến thức AWS Cloud để đóng gói và triển khai ứng dụng AI nhanh chóng hơn.   
+- **Chuẩn bị hành trang sự nghiệp:** Cập nhật lại CV, bổ sung các dự án AI/Cloud thực chiến và đăng ký thi các chứng chỉ AWS phù hợp.
 
 ### Trải nghiệm trong event
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
+Tham gia sự kiện **Buildrathon Kickoff: Code the Future with CMC Global** tại tòa nhà Bitexco là một trải nghiệm cực kỳ năng động và mang lại nhiều giá trị thực tế cho lộ trình phát triển bản thân. Một số điểm nhấn đáng nhớ:
 
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
+#### Không khí công nghệ và cơ hội kết nối rộng mởHọc hỏi từ các diễn giả có chuyên môn cao
+- Sự kiện quy tụ đông đảo các bạn trẻ đam mê công nghệ cùng các chuyên gia hàng đầu. Phần Ice-breaking giúp tôi dễ dàng tìm kiếm những người bạn đồng hành hợp cạ để lập team tham gia cuộc thi.
+- Được trực tiếp giao lưu, lắng nghe tư vấn từ các anh chị đi trước tại CMC Global và AWS, giúp tôi có cái nhìn thực tế hơn rất nhiều so với việc chỉ học lý thuyết.
 
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
+#### Trải nghiệm Hands-on chất lượng
+- Phần thực hành AI Agent Challenge được thiết kế rất trực quan. Việc tự tay dựng một ứng dụng AI mini sử dụng RAG và AWS Knowledge Bases dưới sự hướng dẫn tận tình của các Mentors giúp tôi nhanh chóng nắm bắt được bản chất kỹ thuật.
+- Được giải đáp ngay lập tức các vướng mắc trong quá trình thao tác bài lab.
 
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
-
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
+#### Giá trị vượt mong đợi từ Mock InterviewỨng dụng công cụ hiện đại
+Phiên Mock Interview là một trải nghiệm vô cùng đắt giá. Tôi không chỉ được thử sức trả lời các câu hỏi kỹ thuật chuyên sâu mà còn nhận được những góp ý thẳng thắn, chân thành về cách thể hiện bản thân và định hướng cải thiện CV để ghi điểm với nhà tuyển dụng.
 
 #### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
+- AI Agent chính là làn sóng tiếp theo của công nghệ, việc chủ động nắm bắt kỹ năng xây dựng AI Agent trên nền tảng Cloud như AWS sẽ tạo ra lợi thế cạnh tranh rất lớn.
+- Kỹ năng làm việc nhóm (Teamwork) và kết nối (Networking) đóng vai trò then chốt khi tham gia các cuộc thi công nghệ ngắn hạn như Buildathon.
 
 #### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
+![alt text](../../images/cmc.jpg)
 > Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
