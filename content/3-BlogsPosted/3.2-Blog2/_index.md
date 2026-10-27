@@ -1,31 +1,59 @@
 ---
 title: "Blog 2"
-date: 2024-01-01
+date: 27-10-2026
 weight: 1
 chapter: false
-pre: " <b> 3.2. </b> "
+pre: "  3.2  "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# SESSION POLICIES IN AMAZON EKS POD IDENTITY
+# AWS LEARNING CORNER: WHAT SHOULD AWS BEGINNERS KEEP IN MIND TO AVOID A "SHOCKING" END-OF-MONTH BILL?
 
-Amazon EKS Pod Identity has recently added the session policies feature, allowing you to narrow IAM permissions flexibly and precisely for each pod without needing to create many separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
 
-Key points to know:
+A common scenario for those just starting out with AWS is accidentally launching a test resource and forgetting to shut it down—only to be met with an unexpected bill at the end of the month. Learning to control costs not only gives you peace of mind while practicing, but it is also a fundamental skill for managing cloud infrastructure.
 
-* A session policy is an inline IAM policy specified when creating or updating a Pod Identity association.
-* Effective permissions = intersection between the IAM role permissions and the session policy → the session policy can only narrow permissions, not expand them.
-* Helps avoid over-permissioning when reusing a single IAM role for multiple workloads with different needs.
-* Supports both same-account and cross-account (via IAM role chaining).
-* Significantly reduces the number of IAM roles that need to be managed, helping avoid hitting IAM quota limits in large clusters.
-* Easily configured through the AWS Management Console, AWS CLI, or AWS SDK when creating an association between a Kubernetes ServiceAccount and an IAM role.
+Below are some key settings and considerations to help you manage your budget effectively from the very beginning.
 
-This feature is especially useful when you have many applications running on the same IAM role but need different permission restrictions (for example: one pod only reads a specific S3 bucket, another pod only calls certain APIs).
+---
 
-...Image...
+### 1. Setting Up AWS Budgets & Billing Alerts
 
-...Link...
+This is the first step you should take immediately after creating an AWS account.
 
-...Guide...
+* **Mechanism:** Configure a safe budget threshold (e.g., $5 or $10). If your actual or forecasted costs exceed this limit, the system will automatically send an email notification.
+* **Benefit:** Prevents resources from running in the background indefinitely without being detected in a timely manner.
+
+---
+
+### 2. Making Proper Use of the AWS Free Tier
+
+* **Time Limits:** For instance, EC2 offers 750 hours per month for `t2.micro` or `t3.micro` instances (depending on the region). If you run two such instances simultaneously, the usage time will be doubled, quickly exceeding the free-tier limit.
+* **Capacity Limits:** Services like S3 and EBS have specific caps on storage capacity and the number of requests. Be sure to carefully review the service terms before provisioning resources.
+
+---
+
+### 3. Cleaning up unused resources
+
+"Junk" or orphaned resources are often the source of hidden costs:
+
+* **Shut down or delete EC2 instances:** Stop test servers when they are not in use.
+* **Watch out for Elastic IPs:** Elastic IPs are only free when associated with an EC2 instance that is in the "Running" state. If an Elastic IP is disassociated or attached to an instance that is in the "Stopped" state, you will still be charged a retention fee.
+* **Delete unattached EBS volumes and snapshots:** When an EC2 instance is deleted, certain EBS volumes or automatically created snapshots may remain as orphaned resources, continuing to incur storage costs.
+
+---
+
+### 4. Detailed Monitoring with AWS Cost Explorer
+
+* Visualization Tool: AWS Cost Explorer provides charts to analyze costs over time, by service, or by tag.
+* Regular Reviews: Checking your cost reports once or twice a week helps you quickly identify services that are consuming an unusual amount of your budget.
+
+---
+
+### 5. Conclusion
+
+Cost optimization and control are essential components of the mindset required for working with cloud computing. Establishing a secure infrastructure from the outset allows you to explore and experiment with AWS services with peace of mind, without having to worry about costs.
+
+---
+
+![alt text](<../../images/aws cost optimization.png>)
+
+https://www.facebook.com/groups/awsstudygroupfcj/posts/2317495209015438/?notif_id=1793075766463069&notif_t=group_post_approved&ref=notif
