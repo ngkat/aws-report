@@ -12,4 +12,5 @@ An overview of AWS Amplify: A solution for rapidly building and deploying full-s
 ###  [Blog 2 - WHAT SHOULD AWS BEGINNERS KEEP IN MIND TO AVOID A "SHOCKING" END-OF-MONTH BILL?](3.2-Blog2/)
 A beginner’s guide to managing AWS costs: Essential setups like AWS Budgets, awareness of the Free Tier, and protocols for cleaning up unused resources will help you avoid unexpected charges.
 
-###  [Blog 3 - ](3.3-Blog3/)
+###  [Blog 3 - BUILDING A SIMPLE, SECURE STATIC WEBSITE WITH S3 + CLOUDFRONT + ROUTE 53](3.3-Blog3/)
+A guide to deploying a static website using AWS architecture: Optimize costs, enhance global access speeds, and ensure HTTPS security by integrating Amazon S3, CloudFront (CDN), and Route 53.
