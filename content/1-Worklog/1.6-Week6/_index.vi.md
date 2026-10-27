@@ -31,6 +31,7 @@ pre: "  1.6  "
 * Kiểm tra thành công kết nối đầu ra (Status Code 200 OK).
 * Thời gian phản hồi (Latency) tối ưu dưới 2 giây.
 * Xử lý cấu trúc JSON trả về (ai_response) hỗ trợ tiếng Việt có dấu rõ ràng (ensure_ascii=False).
-* 
+* Đã nạp thành công các điều luật thực tế (Điều 9, Điều 13 Nghị định 13/2023/NĐ-CP).
+* Đã tích hợp thành công boto3 trong Lambda để quét, trích xuất dữ liệu pháp lý và bơm vào prompt cho Groq API (qwen/qwen3.8-27b).
 
 
