@@ -43,8 +43,8 @@ Các tài nguyên "rác" hoặc tài nguyên độc lập thường là nguyên 
 
 ### 4. Theo dõi chi tiết với AWS Cost Explorer
 
-* Công cụ trực quan: AWS Cost Explorer cung cấp biểu đồ phân tích chi phí theo thời gian, theo dịch vụ hoặc theo Tag.
-* Định kỳ kiểm tra: Thói quen xem báo cáo chi phí 1-2 lần/tuần giúp bạn nhanh chóng phát hiện các dịch vụ đang tiêu tốn ngân sách bất thường.
+* **Công cụ trực quan:** AWS Cost Explorer cung cấp biểu đồ phân tích chi phí theo thời gian, theo dịch vụ hoặc theo Tag.
+* **Định kỳ kiểm tra:** Thói quen xem báo cáo chi phí 1-2 lần/tuần giúp bạn nhanh chóng phát hiện các dịch vụ đang tiêu tốn ngân sách bất thường.
 
 ---
 

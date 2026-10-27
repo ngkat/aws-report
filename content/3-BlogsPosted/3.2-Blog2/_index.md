@@ -43,8 +43,8 @@ This is the first step you should take immediately after creating an AWS account
 
 ### 4. Detailed Monitoring with AWS Cost Explorer
 
-* Visualization Tool: AWS Cost Explorer provides charts to analyze costs over time, by service, or by tag.
-* Regular Reviews: Checking your cost reports once or twice a week helps you quickly identify services that are consuming an unusual amount of your budget.
+* **Visualization Tool:** AWS Cost Explorer provides charts to analyze costs over time, by service, or by tag.
+* **Regular Reviews:** Checking your cost reports once or twice a week helps you quickly identify services that are consuming an unusual amount of your budget.
 
 ---
 
