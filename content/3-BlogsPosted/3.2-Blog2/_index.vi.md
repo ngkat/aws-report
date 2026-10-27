@@ -9,7 +9,6 @@ pre: "  3.2  "
 # GÓC HỌC TẬP AWS: MỚI HỌC AWS CẦN LƯU Ý GÌ ĐỂ KHÔNG "GIẬT MÌNH" VÌ HÓA ĐƠN CUỐI THÁNG?
 
 
-
 Một trong những tình huống quen thuộc với người mới bắt đầu trải nghiệm AWS là lỡ tay bật một tài nguyên thử nghiệm rồi quên tắt, để rồi nhận hóa đơn bất ngờ vào cuối tháng. Việc kiểm soát chi phí không chỉ giúp bạn yên tâm thực hành mà còn là kỹ năng cơ bản quan trọng trong quản trị hạ tầng Cloud.
 
 Dưới đây là các thiết lập và lưu ý quan trọng giúp quản lý ngân sách hiệu quả ngay từ những ngày đầu.
@@ -32,28 +31,29 @@ Dưới đây là các thiết lập và lưu ý quan trọng giúp quản lý n
 
 ---
 
-### 3. Đánh giá trải nghiệm thực tế
+### 3. Dọn dẹp tài nguyên không sử dụng
 
-**Ưu điểm:**
+Các tài nguyên "rác" hoặc tài nguyên độc lập thường là nguyên nhân phát sinh chi phí ẩn:
 
-* **Tốc độ triển khai tối ưu:** Đặc biệt phù hợp cho các dự án demo, đồ án môn học hoặc sản phẩm MVP (Minimum Viable Product).
-* **Kiến trúc Serverless:** Không tốn chi phí và công sức duy trì hay quản lý máy chủ.
-* **Hỗ trợ đa nền tảng:** Tích hợp tốt với các framework phổ biến như React, Next.js, Vue, Flutter, React Native...
-
-**Hạn chế:**
-
-* Khi quy mô ứng dụng mở rộng và yêu cầu tùy chỉnh sâu về hạ tầng (như cấu hình VPC riêng hay phân quyền IAM phức tạp), việc can thiệp vào các tài nguyên do Amplify tự động tạo ra sẽ cần thời gian nghiên cứu thêm.
+* **Tắt hoặc xóa EC2 instance:** Dừng các máy chủ thử nghiệm khi không làm việc.
+* **Lưu ý Elastic IP:** Elastic IP chỉ miễn phí khi được gán vào một EC2 instance đang ở trạng thái Running. Nếu ngắt kết nối hoặc gán vào instance đang Stopped, bạn vẫn sẽ bị tính phí duy trì.
+* **Xóa Unattached EBS Volumes & Snapshots:** Khi xóa EC2 instance, một số EBS volume hoặc snapshot tự động tạo có thể vẫn tồn tại độc lập và tiếp tục tính phí lưu trữ.
 
 ---
 
-### 4. Tổng kết
+### 4. Theo dõi chi tiết với AWS Cost Explorer
 
-AWS Amplify là giải pháp hiệu quả giúp tối ưu hóa quy trình phát triển và đưa sản phẩm lên Cloud một cách chuẩn chỉnh, tiết kiệm thời gian.
+* Công cụ trực quan: AWS Cost Explorer cung cấp biểu đồ phân tích chi phí theo thời gian, theo dịch vụ hoặc theo Tag.
+* Định kỳ kiểm tra: Thói quen xem báo cáo chi phí 1-2 lần/tuần giúp bạn nhanh chóng phát hiện các dịch vụ đang tiêu tốn ngân sách bất thường.
 
 ---
 
-...Hình ảnh...
+### 5. Tổng kết
 
-...Link...
+Tối ưu và kiểm soát chi phí là một phần không thể thiếu trong tư duy làm việc với Cloud Computing. Thiết lập hạ tầng an toàn ngay từ đầu sẽ giúp bạn thoải mái học tập và thử nghiệm các dịch vụ AWS mà không phải lo lắng về vấn đề chi phí.
 
-...Hướng dẫn...
+---
+
+![alt text](<../../images/aws cost optimization.png>)
+
+https://www.facebook.com/groups/awsstudygroupfcj/posts/2317495209015438/?notif_id=1793075766463069&notif_t=group_post_approved&ref=notif
