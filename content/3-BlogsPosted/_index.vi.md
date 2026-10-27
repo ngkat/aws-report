@@ -12,5 +12,4 @@ Hướng dẫn tổng quan về AWS Amplify: Giải pháp xây dựng & deploy �
 ###  [Blog 2 - MỚI HỌC AWS CẦN LƯU Ý GÌ ĐỂ KHÔNG "GIẬT MÌNH" VÌ HÓA ĐƠN CUỐI THÁNG?](3.2-Blog2/)
 Hướng dẫn quản lý chi phí AWS cho người mới: Các thiết lập thiết yếu như AWS Budgets, lưu ý Free Tier và quy tắc dọn dẹp tài nguyên rác giúp bạn tránh hóa đơn phát sinh ngoài ý muốn.
 
-###  [Blog 3 - ...](3.3-Blog3/)
-Blog này giới thiệu Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
+###  [Blog 3 - ](3.3-Blog3/)
