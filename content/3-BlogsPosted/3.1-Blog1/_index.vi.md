@@ -8,7 +8,7 @@ pre: "  3.1  "
 
 # GÓC HỌC TẬP AWS: TÌM HIỂU AWS AMPLIFY & VÌ SAO NÓ PHÙ HỢP CHO DỰ ÁN CÁ NHÂN / ĐỒ ÁN SINH VIÊN?
 
----
+
 
 Mỗi lần làm đồ án hay dựng project cá nhân, chắc hẳn nhiều bạn từng rơi vào cảnh: hoàn thiện giao diện (Frontend) rất nhanh, nhưng đến giai đoạn xây dựng Backend, cấu hình Database, tích hợp Đăng nhập/Đăng ký và deploy lên server thì mất rất nhiều thời gian.
 
