@@ -15,7 +15,7 @@ pre: "  1.4  "
 * Understand cloud data warehouse architecture and high-performance data loading/querying techniques with Amazon Redshift.
 * Master the setup and management of big data processing clusters (frameworks such as Apache Spark, Hadoop, and Hive) on Amazon EMR.
 
-### Tasks to be implemented this week:
+### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                       | Start Date   | Completion Date | Resource Source                                 |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
 | Mon | - Explore AWS Glue (Serverless Data Integration Service) <br> - **Hands-on Practice:** <br>&emsp; + Initialize AWS Glue Data Catalog & configure Glue Crawler for automatic schema discovery <br>&emsp; + Create and configure AWS Glue Databases & Tables <br>&emsp; + Build and launch ETL (Extract, Transform, Load) tasks using AWS Glue Jobs <br>&emsp; + Perform data transformation and save results to S3 / Redshift / DynamoDB <br>&emsp; + Automate and schedule ETL Jobs using AWS Glue Triggers / Workflows <br>&emsp; + Resource cleanup                                                                                             | 05/10/2026   | 05/10/2026      | <https://000092.awsstudygroup.com>

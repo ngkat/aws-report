@@ -14,7 +14,7 @@ pre: "  1.3  "
 * Understand and configure Domain Name System (DNS) resolution, routing management, and resource health checks using Amazon Route 53.
 * Gain proficiency in monitoring, logging, and system auditing tools using Amazon CloudWatch & AWS CloudTrail.
 
-### Tasks to be implemented this week:
+### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                       | Start Date   | Completion Date | Resource Source                           |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
 | Mon | - Learn about Amazon CloudFront (Content Delivery Network - CDN) <br> - **Hands-on Practice:** <br>&emsp; + Create a CloudFront Distribution <br>&emsp; + Configure Origin (S3 Bucket or Custom Origin like EC2/ALB) <br>&emsp; + Configure Origin Access Control (OAC) to secure the S3 Bucket <br>&emsp; + Set up Caching policies, Behaviors, and HTTPS/SSL Certificates <br>&emsp; + Optimize content delivery and test Cache Invalidation <br>&emsp; + Clean up resources                                                                                             | 28/09/2026   | 28/09/2026      | <https://000008.awsstudygroup.com>

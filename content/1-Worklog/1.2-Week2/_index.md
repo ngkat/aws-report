@@ -14,7 +14,7 @@ pre: "  1.2  "
 * Become proficient in using the AWS CLI, from basic to advanced levels (profile management, scripting, JMESPath data filtering).
 * Understand and practice high-performance NoSQL database administration with Amazon DynamoDB.
 
-### Tasks to be implemented this week:
+### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                       | Start Date   | Completion Date | Resource Source                           |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
 | Mon | - Learn about Amazon S3 (Object Storage) <br> - **Hands-on Practice:** <br>&emsp; + Create S3 Bucket & Upload data to the Bucket <br>&emsp; + Enable Static Website hosting, configure Block Public Access & grant public permissions to Objects <br>&emsp; + Verify website operation & optimize speed using Amazon CloudFront <br>&emsp; + Configure Bucket Versioning & move Objects <br>&emsp; + Set up Multi-Region Object Replication <br>&emsp; + Clean up resources                                                                                             | 21/09/2026   | 21/09/2026      | <https://000057.awsstudygroup.com>

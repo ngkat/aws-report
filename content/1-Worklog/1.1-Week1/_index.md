@@ -13,7 +13,7 @@ pre: " 1.1 "
 * Master the process of launching, managing, and deploying real-world applications on Amazon EC2 virtual server services (Linux & Windows).
 * Learn how to grant applications secure access to AWS services via IAM Roles and utilize the AWS CloudShell environment.
 
-### Tasks to be implemented this week:
+### Tasks to be carried out this week:
 | Day | Task                                                                                                                                                                                       | Start Date   | Completion Date | Resource Source                           |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
 | Mon | - Learn about AWS IAM (User, Group, Policy, Role) <br> - **Hands-on Practice:** <br>&emsp; + Create IAM Group & IAM User <br>&emsp; + Create IAM Role & Operator User <br> &emsp; + Configure & Use Switch Role <br>&emsp; + Clean up resources                                                                                             | 14/09/2026   | 14/09/2026      | <https://000002.awsstudygroup.com>
