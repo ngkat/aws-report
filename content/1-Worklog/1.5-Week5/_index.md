@@ -11,9 +11,9 @@ pre: "  1.5  "
 
 * Carry out work with the project team.
 
-### Tasks to be developed this week:
-| Day | Task | Start Date | End Date | Source Material |
-| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | ------------ | --------------- | ----------------------------------------- |
+### Tasks to be implemented this week:
+| Day | Task                                                                                                                                                                                   | Start date | Completion date | Resource Source                            |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
 | 2 | - Identify the core concept for the project <br> - Group discussion, exchange of opinions and ideas among members <br> - Filter, evaluate, and select the final concept | 10/12/2026 | 10/12/2026 |
 | 3 | - Brainstorm and establish the project direction <br> - Create a foundational framework for operations <br> - Preliminary task allocation among members | 10/13/2026 | 10/13/2026 |
 | 4 | - Set up the backend using the AWS Console <br>&emsp; + API Gateway <br>&emsp; + Lambda | 10/14/2026 | 10/14/2026 |
