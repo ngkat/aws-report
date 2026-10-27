@@ -9,47 +9,28 @@ pre: "  1.5  "
 
 ### Mục tiêu tuần 5:
 
-* Tiến hành làm việc với dự án nhóm.
+* Tiến hành làm việc với project nhóm.
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Tìm concept chính cho dự án <br> - Thảo luận nhóm, trao đổi ý kiến và ý tưởng giữa các thành viên <br> - Sàng lọc, cân nhắc và chọn ra concept cuối cùng                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Tìm concept chính cho project <br> - Thảo luận nhóm, trao đổi ý kiến và ý tưởng giữa các thành viên <br> - Sàng lọc, cân nhắc và chọn ra concept cuối cùng                                                                                             | 12/10/2026   | 12/10/2026      |
+| 3   | - Brainstorm, xây dựng định hướng cho project <br> - Tạo bộ khung nền tảng để vận hành <br> - Phân công công việc sơ bộ cho các thành viên                                            | 13/10/2026   | 13/10/2026      |
+| 4   | - Set up Backend với AWS Console <br>&emsp; + API Gateway <br>&emsp; + Lambda | 14/10/2026   | 14/10/2026      |
+| 5   | - Set up Backend với AWS Console <br>&emsp; + Request validation <br>&emsp; + Session ID                  | 15/10/2026   | 15/10/2026      |
+| 6   | - Set up Backend với AWS Console <br>&emsp; + Conversation history <br>&emsp; + Dynamo DB <br>&emsp; + Gọi RAG                                                                                         | 16/10/2026   | 16/10/2026      |
 
 
 ### Kết quả đạt được tuần 5:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Tạo thành công Lambda legal-ai-chat-lambda (Runtime Python 3.12)
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Tạo thành công REST API legal-ai-chat-api
+* Tạo Resource /chat và Method POST với Lambda Proxy Integration
+* Đã Deploy API lên Stage prod và có Invoke URL
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Đã đính kèm Policy AmazonDynamoDBFullAccess cho IAM Role của Lambda
+* Đã cập nhật mã nguồn Lambda có chứa boto3 để đọc/ghi DynamoDB
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Đã cập nhật code Lambda hỗ trợ tạo session_id tự động và xử lý GET /history/{session_id}
+* Tạo thành công resource /history/{session_id} với method GET trên API Gateway
