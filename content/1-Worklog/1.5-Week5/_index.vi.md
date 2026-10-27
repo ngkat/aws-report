@@ -24,13 +24,10 @@ pre: "  1.5  "
 ### Kết quả đạt được tuần 5:
 
 * Tạo thành công Lambda legal-ai-chat-lambda (Runtime Python 3.12)
-
 * Tạo thành công REST API legal-ai-chat-api
 * Tạo Resource /chat và Method POST với Lambda Proxy Integration
 * Đã Deploy API lên Stage prod và có Invoke URL
-
 * Đã đính kèm Policy AmazonDynamoDBFullAccess cho IAM Role của Lambda
 * Đã cập nhật mã nguồn Lambda có chứa boto3 để đọc/ghi DynamoDB
-
 * Đã cập nhật code Lambda hỗ trợ tạo session_id tự động và xử lý GET /history/{session_id}
 * Tạo thành công resource /history/{session_id} với method GET trên API Gateway
