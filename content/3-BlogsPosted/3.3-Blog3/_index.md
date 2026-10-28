@@ -1,6 +1,6 @@
 ---
 title: "Blog 3"
-date: --2026
+date: 27-10-2026
 weight: 1
 chapter: false
 pre: "  3.3  "
@@ -52,4 +52,4 @@ This is a classic yet essential exercise that helps you master the mindset of in
 
 ![alt text](<../../images/aws static website.png>)
 
-...Link...
+https://www.facebook.com/groups/awsstudygroupfcj/?multi_permalinks=2317669882331304&notif_id=1793105995816910&notif_t=feedback_reaction_generic&ref=notif
