@@ -32,3 +32,6 @@ pre: "  1.6  "
 * Đồng bộ hóa cấu trúc HTTP Response cho toàn bộ hệ thống kèm đầy đủ tiêu đề CORS.
 * Xử lý lỗi thiếu biến môi trường cấu hình GROQ_API_KEY.
 * Xử lý lỗi timeout mạng khi đường truyền gặp vấn đề.
+* Xây dựng khung chat hoàn chỉnh, tích hợp Tailwind CSS để bố cục hiện đại, thân thiện.
+* Truy cập thành công vào http://localhost:8000 và verify giao diện hoạt động mượt mà.
+* Lấy đường dẫn S3 Website Public URL, mở trên trình duyệt cá nhân và gửi link cho các thành viên trong nhóm để kiểm tra quyền truy cập.
