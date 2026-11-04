@@ -45,21 +45,15 @@ Sơ đồ kiến trúc & luồng dữ liệu có đánh số bước 1-8
 
 Hệ thống khác thiết kế ban đầu ở một số điểm. Bảng này giúp workshop nói đúng về những gì đang có.
 
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Đợi tiến trình của các thành viên khác <br> - Thảo luận, cân nhắc về việc nâng cấp, cải thiện project và thêm feature                                                                                             | 26/10/2026   | 26/10/2026      |
-| 3   | - Đợi tiến trình của các thành viên khác                                            | 27/10/2026   | 27/10/2026      |
-| 4   | - Đợi tiến trình của các thành viên khác | 28/10/2026   | 28/10/2026      |
-| 5   | - Đợi tiến trình của các thành viên khác                  | 29/10/2026   | 29/10/2026      |
-| 6   | - Đợi tiến trình của các thành viên khác                                                                                         | 30/10/2026   | 30/10/2026      |
-
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Đợi tiến trình của các thành viên khác <br> - Thảo luận, cân nhắc về việc nâng cấp, cải thiện project và thêm feature                                                                                             | 26/10/2026   | 26/10/2026      |
-| 3   | - Đợi tiến trình của các thành viên khác                                            | 27/10/2026   | 27/10/2026      |
-| 4   | - Đợi tiến trình của các thành viên khác | 28/10/2026   | 28/10/2026      |
-| 5   | - Đợi tiến trình của các thành viên khác                  | 29/10/2026   | 29/10/2026      |
-| 6   | - Đợi tiến trình của các thành viên khác                                                                                         | 30/10/2026   | 30/10/2026      |
+| **Hạng mục** | **Thiết kế ban đầu** | **Đang triển khai** |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| Cơ sở tri thức | S3 + Bedrock Knowledge | Bảng DynamoDB LegalArticles (tra theo từ khóa) |
+| LLM | Amazon Bedrock | Groq API (bên ngoài AWS) |
+| Frontend | AWS Amplify | S3 static website |
+| Xác thực | Cognito | Chưa có (API công khai) |
+| Định dạng phản hồi | Có cấu trúc: mức rủi ro, điều khoản, bằng chứng... | Câu trả lời dạng chữ bọc trong JSON |
+| Lịch sử hội thoại | DynamoDB | Chưa triển khai |
+| Báo cáo sự cố + cảnh báo | SNS | Hướng phát triển |
 
 #### Nguyên tắc an toàn AI
 * Chỉ là đánh giá sơ bộ, không phải kết luận pháp lý chính thức.
