@@ -29,9 +29,11 @@ Hệ thống xây dựng trên kiến trúc serverless với các thành phần:
 Sơ đồ kiến trúc & luồng dữ liệu
 #### Nội dung
 
-1. [Tổng quan về workshop](5.1-Workshop-overview/)
+1. [Giới thiệu](5.1-Introduction/)
 2. [Chuẩn bị](5.2-Prerequiste/)
-3. [Truy cập đến S3 từ VPC](5.3-S3-vpc/)
-4. [Truy cập đến S3 từ TTDL On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (làm thêm)](5.5-Policy/)
-6. [Dọn dẹp tài nguyên](5.6-Cleanup/)
+3. [Giai đoạn 1 – Thiết lập Prompt & cơ chế RAG](5.3-Phase 1 – Prompt setup and RAG mechanism/)
+4. [Giai đoạn 2 – Backend: từ Database đến Lambda & API](5.4-Phase 2 – Backend from database to Lambda and API/)
+5. [Frontend – S3 static website](5.5-Frontend – S3 static website/)
+6. [Bảo mật & vận hành](5.6-Security & operations/)
+7. [Thành quả cuối cùng và hướng phát triển](5.7-Final output and next steps/)
+8. [Dọn dẹp tài nguyên](5.6-Cleanup/)
