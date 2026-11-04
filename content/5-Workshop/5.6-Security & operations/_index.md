@@ -44,7 +44,7 @@ A test request appears in the logs; the Budget alert is active.
 
 #### 5.6.3. Hardening roadmap
 
-1. Add API throttling and a usage plan to protect the Groq quota (high priority, no code change in the frontend)
+1. Add API throttling and a usage plan to protect the Groq quota (high priority, no code change in the frontend).
 2. Move the Groq key to SSM Parameter Store and grant Lambda read access to that one parameter.
 3. Restrict CORS to the website origin.
 4. Add Cognito sign-in if the system leaves demo mode.
