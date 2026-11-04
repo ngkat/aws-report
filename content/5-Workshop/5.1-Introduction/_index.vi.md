@@ -46,7 +46,7 @@ Sơ đồ kiến trúc & luồng dữ liệu có đánh số bước 1-8
 Hệ thống khác thiết kế ban đầu ở một số điểm. Bảng này giúp workshop nói đúng về những gì đang có.
 
 | **Hạng mục** | **Thiết kế ban đầu** | **Đang triển khai** |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| ------------ | -------------------- | ------------------- |
 | Cơ sở tri thức | S3 + Bedrock Knowledge | Bảng DynamoDB LegalArticles (tra theo từ khóa) |
 | LLM | Amazon Bedrock | Groq API (bên ngoài AWS) |
 | Frontend | AWS Amplify | S3 static website |
