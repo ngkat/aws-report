@@ -24,7 +24,9 @@ Hệ thống xây dựng trên kiến trúc serverless với các thành phần:
 * Cơ sở tri thức – Amazon DynamoDB (bảng LegalArticles)
 * LLM – Groq API (qwen/qwen3.8-27b), dịch vụ bên ngoài AWS
 * Giám sát – Amazon CloudWatch
+
 ![alt text](<../images/Sơ đồ kiến trúc & luồng dữ liệu.png>)
+Sơ đồ kiến trúc & luồng dữ liệu
 #### Nội dung
 
 1. [Tổng quan về workshop](5.1-Workshop-overview/)
