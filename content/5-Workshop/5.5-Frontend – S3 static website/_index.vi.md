@@ -1,95 +1,75 @@
 ---
-title : "VPC Endpoint Policies"
-date : 2024-01-01
+title : "Frontend – S3 static website"
+date : 15-10-2026
 weight : 5
 chapter : false
-pre : " <b> 5.5 </b> "
+pre : "  5.5  "
 ---
 
-Khi bạn tạo một Interface Endpoint  hoặc cổng, bạn có thể đính kèm một chính sách điểm cuối để kiểm soát quyền truy cập vào dịch vụ mà bạn đang kết nối. Chính sách VPC Endpoint là chính sách tài nguyên IAM mà bạn đính kèm vào điểm cuối. Nếu bạn không đính kèm chính sách khi tạo điểm cuối, thì AWS sẽ đính kèm chính sách mặc định cho bạn để cho phép toàn quyền truy cập vào dịch vụ thông qua điểm cuối.
+#### Tổng quan
 
-Bạn có thể tạo chính sách chỉ hạn chế quyền truy cập vào các S3 bucket cụ thể. Điều này hữu ích nếu bạn chỉ muốn một số Bộ chứa S3 nhất định có thể truy cập được thông qua điểm cuối.
+| Mục | Nội dung |
+| --- | -------- |
+| Mục đích | Trang chat để người dùng đặt câu hỏi và đọc câu trả lời. |
+| Dịch vụ AWS | Amazon S3 (static website hosting) |
+| Đầu vào | Câu hỏi người dùng |
+| Đầu ra | Câu trả lời hiển thị trong khung chat |
+| Phụ thuộc | URL của Backend API |
 
-Trong phần này, bạn sẽ tạo chính sách VPC Endpoint hạn chế quyền truy cập vào S3 bucket được chỉ định trong chính sách VPC Endpoint.
+#### 5.5.1. Dựng giao diện chat (index.html)
 
-![endpoint diagram](/images/5-Workshop/5.5-Policy/s3-bucket-policy.png)
+**Mục tiêu**
+Một trang tĩnh duy nhất gọi backend bằng fetch.
+**Các bước**
+1. Dựng bố cục chat: tiêu đề, badge trạng thái, lời chào, danh sách tin nhắn, ô nhập và nút gửi.
+2. Khi gửi, gọi fetch bằng HTTP POST tới URL API và hiển thị trạng thái đang xử lý.
+3. Hiển thị thông báo rõ ràng cho các lỗi (400, 429, 502/504).
+4. Khuyến nghị: thêm disclaimer hiển thị rằng câu trả lời là sơ bộ, không phải tư vấn pháp lý.
 
-#### Kết nối tới EC2 và xác minh kết nối tới S3. 
+[ CHÈN ẢNH CHỤP ]
+Trang chat của website đã deploy
+5.5-Frontend/frontend-ui.png
 
-1. Bắt đầu một phiên AWS Session Manager mới trên máy chủ có tên là Test-Gateway-Endpoint. Từ phiên này, xác minh rằng bạn có thể liệt kê nội dung của bucket mà bạn đã tạo trong Phần 1: Truy cập S3 từ VPC.
+**Kiểm tra**
+Mở index.html trên máy thấy trang chat và lời chào.
 
-```
-aws s3 ls s3://<your-bucket-name>
-```
-![test](/images/5-Workshop/5.5-Policy/test1.png)
+#### 5.5.2. Host trang trên S3
 
-Nội dung của bucket bao gồm hai tệp có dung lượng 1GB đã được tải lên trước đó.
+**Mục tiêu**
+Công khai index.html dưới dạng static website.
+**Các bước**
+1. Tạo bucket ai-legal-assistant-frontend-hau ở ap-southeast-2.
+2. Tải index.html lên.
+3. Bật Static website hosting với index.html làm index document.
+4. Cho phép đọc công khai riêng bucket này (tắt Block Public Access cho nó và thêm bucket policy chỉ đọc).
+5. Mở website endpoint.
 
-2. Tạo một bucket S3 mới; tuân thủ mẫu đặt tên mà bạn đã sử dụng trong Phần 1, nhưng thêm '-2' vào tên. Để các trường khác là mặc định và nhấp vào **Create**.
+Bảo mật: bucket công khai có chủ đích, nên chỉ chứa file frontend. Không đặt API key trong index.html. Website endpoint của S3 chỉ phục vụ HTTP.
 
-![create bucket](/images/5-Workshop/5.5-Policy/create-bucket.png)
+[ CHÈN ẢNH CHỤP ]
+Cài đặt Static website hosting
+5.5-Frontend/s3-website.png
 
-3. Tạo bucket thành công.
+[ CHÈN ẢNH CHỤP ]
+Bucket policy cho phép đọc công khai
+5.5-Frontend/s3-bucket-policy.png
 
-![Success](/images/5-Workshop/5.5-Policy/create-bucket-success.png)
+**Kiểm tra**
+Endpoint http://<bucket>.s3-website-ap-southeast-2.amazonaws.com mở được trang.
 
-Policy mặc định cho phép truy cập vào tất cả các S3 Buckets thông qua VPC endpoint.
+#### 5.5.3. Connect to the API and test end-to-end
 
-4. Trong giao diện **Edit Policy**, sao chép và dán theo policy sau, thay thế yourbucketname-2 với tên bucket thứ hai của bạn. Policy này sẽ cho phép truy cập đến bucket mới thông qua VPC endpoint, nhưng không cho phép truy cập đến các bucket còn lại. Chọn **Save** để kích hoạt policy.
+**Mục tiêu**
+Cho trang đã deploy gọi backend thật.
+**Các bước**
+1. Đặt URL gọi API trong index.html và tải lại lên.
+2. Mở website và hỏi câu hỏi mẫu.
+3. Mở console của trình duyệt và kiểm tra không có lỗi CORS.
+4. Kiểm tra request trong CloudWatch Logs.
 
+[ CHÈN ẢNH CHỤP ]
+Câu trả lời hiển thị trên website
+5.5-Frontend/e2e-result.png
 
-```
-{
-  "Id": "Policy1631305502445",
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Sid": "Stmt1631305501021",
-      "Action": "s3:*",
-      "Effect": "Allow",
-      "Resource": [
-      				"arn:aws:s3:::yourbucketname-2",
-       				"arn:aws:s3:::yourbucketname-2/*"
-       ],
-      "Principal": "*"
-    }
-  ]
-}
-```
-
-![custom policy](/images/5-Workshop/5.5-Policy/policy2.png)
-
-Cấu hình policy thành công.
-
-![success](/images/5-Workshop/5.5-Policy/success.png)
-
-5. Từ session của bạn trên Test-Gateway-Endpoint instance, kiểm tra truy cập đến S3 bucket bạn tạo ở bước đầu
-
-```
-aws s3 ls s3://<yourbucketname>
-```
-
-Câu lệnh trả về lỗi bởi vì truy cập vào S3 bucket không có quyền trong VPC endpoint policy.
-
-![error](/images/5-Workshop/5.5-Policy/error.png)
-
-6. Trở lại home directory của bạn trên EC2 instance ```cd~```
-
-+ Tạo file ```fallocate -l 1G test-bucket2.xyz ```
-+ Sao chép file lên bucket thứ  2 ```aws s3 cp test-bucket2.xyz s3://<your-2nd-bucket-name>```
-
-![success](/images/5-Workshop/5.5-Policy/test2.png)
-
-Thao tác này được cho phép bởi VPC endpoint policy.
-
-![success](/images/5-Workshop/5.5-Policy/test2-success.png)
-
-Sau đó chúng ta kiểm tra truy cập vào S3 bucket đầu tiên
-
- ```aws s3 cp test-bucket2.xyz s3://<your-1st-bucket-name>```
-
- ![fail](/images/5-Workshop/5.5-Policy/test2-fail.png)
-
- Câu lệnh xảy ra lỗi bởi vì bucket không có quyền truy cập bởi VPC endpoint policy.
-
-Trong phần này, bạn đã tạo chính sách VPC Endpoint cho Amazon S3 và sử dụng AWS CLI để kiểm tra chính sách. Các hoạt động AWS CLI liên quan đến bucket S3 ban đầu của bạn thất bại vì bạn áp dụng một chính sách chỉ cho phép truy cập đến bucket thứ hai mà bạn đã tạo. Các hoạt động AWS CLI nhắm vào bucket thứ hai của bạn thành công vì chính sách cho phép chúng. Những chính sách này có thể hữu ích trong các tình huống khi bạn cần kiểm soát quyền truy cập vào tài nguyên thông qua VPC Endpoint.
+**Kiểm tra**
+Câu hỏi → câu trả lời có căn cứ trên trang, kèm một dòng log tương ứng.
