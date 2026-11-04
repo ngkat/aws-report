@@ -28,6 +28,7 @@ pre : "  5.6  "
 
 **Goal**
 Detect errors and unexpected cost early.
+
 **Steps**
 1. Set a log retention period on the Lambda log group.
 2. Create an alarm for Lambda errors (optional).
@@ -40,6 +41,7 @@ CloudWatch log group / alarm
 5.6-Security/cloudwatch-dashboard.png
 
 **Verify**
+
 A test request appears in the logs; the Budget alert is active.
 
 #### 5.6.3. Hardening roadmap

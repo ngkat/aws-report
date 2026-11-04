@@ -20,6 +20,7 @@ pre : "  5.5  "
 
 **Goal**
 A single static page that talks to the backend with fetch.
+
 **Steps**
 1. Build the chat layout: title, status badge, welcome message, message list, input box and send button.
 2. On send, call fetch with an HTTP POST to the API URL and show a loading state.
@@ -31,12 +32,14 @@ The chat page of the live site
 5.5-Frontend/frontend-ui.png
 
 **Verify**
+
 Opening index.html locally shows the chat page and the welcome message.
 
 #### 5.5.2. Host the page on S3
 
 **Goal**
 Publish index.html as a static website.
+
 **Steps**
 1. Create the bucket ai-legal-assistant-frontend-hau in ap-southeast-2.
 2. Upload index.html.
@@ -55,12 +58,14 @@ Public-read bucket policy
 5.5-Frontend/s3-bucket-policy.png
 
 **Verify**
+
 The endpoint http://<bucket>.s3-website-ap-southeast-2.amazonaws.com loads the page.
 
 #### 5.5.3. Connect to the API and test end-to-end
 
 **Goal**
 Make the live page call the real backend.
+
 **Steps**
 1. Set the API invoke URL in index.html and re-upload it.
 2. Open the live site and ask the sample question.
@@ -72,4 +77,5 @@ An answer displayed on the live site
 5.5-Frontend/e2e-result.png
 
 **Verify**
+
 Question → grounded answer on the page, with a matching log entry.

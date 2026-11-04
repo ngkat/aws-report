@@ -28,6 +28,7 @@ pre : "  5.6  "
 
 **Mục tiêu**
 Phát hiện sớm lỗi và chi phí bất thường.
+
 **Các bước**
 1. Đặt thời gian lưu log cho log group của Lambda.
 2. Tạo alarm cho lỗi Lambda (tùy chọn).
@@ -38,6 +39,7 @@ Log group / alarm trong CloudWatch
 5.6-Security/cloudwatch-dashboard.png
 
 **Kiểm tra**
+
 Request thử nghiệm xuất hiện trong log; cảnh báo Budget đang hoạt động.
 
 #### 5.6.3. Lộ trình siết bảo mật
