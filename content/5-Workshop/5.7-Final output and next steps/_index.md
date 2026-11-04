@@ -1,26 +1,26 @@
 ---
-title : "Thành quả cuối cùng và hướng phát triển"
+title : "Final output and next steps"
 date : 15-10-2026
 weight : 7 
 chapter : false
 pre : "  5.7  "
 ---
 
-#### Thành quả
+#### Final output
 
-* Hệ thống serverless backend hoàn chỉnh, tự co giãn và, theo ghi nhận của nhóm, tốn $0 nhờ nằm trong AWS Free Tier.
-* Luồng RAG vận hành được: mỗi request tra cứu điều luật từ DynamoDB và kết hợp với LLM để đưa ra câu trả lời có căn cứ.
-* Một API endpoint ổn định, sẵn sàng cho website tĩnh và để các thành viên kiểm thử.
+* A complete serverless backend that scales automatically and, by the team's measurement, costs $0 while staying within the AWS Free Tier.
+* A working RAG flow: each request retrieves articles from DynamoDB and combines them with the LLM to give a grounded answer.
+* A stable API endpoint, ready for the static website and for team members to test.
 
-#### Hạn chế đã biết
+#### Known limitations
 
-* Tra cứu theo từ khóa có thể bỏ sót điều luật liên quan.
-* Câu trả lời là văn bản thuần; chưa có mức rủi ro có cấu trúc.
-* LLM chạy ngoài AWS và API chưa có xác thực.
+* Keyword retrieval can miss relevant articles.
+* The answer is plain text; there is no structured risk level yet.
+* The LLM runs outside AWS and the API has no authentication yet.
 
-#### Hướng phát triển
+#### Next steps
 
-* Phản hồi có cấu trúc với mức rủi ro (Low / Medium / High / Insufficient evidence), điều khoản, bằng chứng và nguồn.
-* Báo cáo sự cố có người xác nhận kèm cảnh báo email qua Amazon SNS (chỉ tóm tắt, không có dữ liệu nhạy cảm).
-* Lịch sử hội thoại trong DynamoDB có TTL.
-* Đánh giá Amazon Bedrock và Bedrock Knowledge Bases để giữ toàn bộ dữ liệu trong AWS (kiểm tra giá hiện hành và region hỗ trợ trước).
+* Structured response with risk level (Low / Medium / High / Insufficient evidence), provisions, evidence and sources.
+* Human-confirmed incident report with an Amazon SNS email alert (summary only, no sensitive data).
+* Conversation history in DynamoDB with TTL.
+* Evaluate Amazon Bedrock and Bedrock Knowledge Bases to keep all data inside AWS (check current pricing and region availability first).
