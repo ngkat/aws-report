@@ -14,11 +14,11 @@ pre: "  1.6  "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Resource Source |
 | --- | ---- | ---------- | --------------- | --------------- |
-| 2   | - Set up backend using AWS Console <br>&emsp; + Call the Groq API (using the `qwen/qwen3.8-27b` model)                                                                                                   | 19/10/2026 | 19/10/2026      |
-| 3   | - Set up backend using AWS Console <br>&emsp; + Build a RAG pipeline                                              | 20/10/2026 | 20/10/2026      |
-| 4   | - Setting up the backend using the AWS Console <br>&emsp; + Building Amazon API Gateway | 21/10/2026 | 21/10/2026      |
-| 5   | - Set up Backend with AWS Console <br>&emsp; + Input Validation <br>&emsp; + Standardized Error Handling                            | 22/10/2026 | 22/10/2026      |
-| 6   | - Set up the backend using the AWS Console <br>&emsp; + Build the web chat interface (frontend)                                                                                     | 23/10/2026 | 23/10/2026      |
+| Mon | - Set up backend using AWS Console <br>&emsp; + Call the Groq API (using the `qwen/qwen3.8-27b` model) | 19/10/2026 | 19/10/2026 |
+| Tue | - Set up backend using AWS Console <br>&emsp; + Build a RAG pipeline | 20/10/2026 | 20/10/2026 |
+| Wed | - Setting up the backend using the AWS Console <br>&emsp; + Building Amazon API Gateway | 21/10/2026 | 21/10/2026 |
+| Thu | - Set up Backend with AWS Console <br>&emsp; + Input Validation <br>&emsp; + Standardized Error Handling | 22/10/2026 | 22/10/2026 |
+| Fri | - Set up the backend using the AWS Console <br>&emsp; + Build the web chat interface | 23/10/2026 | 23/10/2026 |
 
 
 ### Week 6 Achievements:
