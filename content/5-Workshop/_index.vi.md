@@ -3,26 +3,28 @@ title: "Workshop"
 date: 15-10-2026
 weight: 5
 chapter: false
-pre: " <b> 5. </b> "
+pre: "  5  "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
-# Đảm bảo truy cập Hybrid an toàn đến S3 bằng cách sử dụng VPC endpoint
+# AI Legal & Security Assistant
+RAG Serverless tra cứu pháp lý & bảo vệ dữ liệu trên AWS
 
 #### Tổng quan
 
-**AWS PrivateLink** cung cấp kết nối riêng tư đến các dịch vụ aws từ VPCs hoặc trung tâm dữ liệu (on-premise) mà không làm lộ lưu lượng truy cập ra ngoài public internet.
+AI Legal & Security Assistant là trợ lý tư vấn pháp lý sơ bộ cho doanh nghiệp, tập trung vào Nghị định 13/2023/NĐ-CP (bảo vệ dữ liệu cá nhân). Người dùng nhập câu hỏi hoặc một tình huống thực tế; hệ thống tra cứu các điều luật liên quan trong cơ sở dữ liệu, sau đó mô hình ngôn ngữ lớn phân tích câu hỏi chỉ dựa trên các điều luật đó.
 
-Trong bài lab này, chúng ta sẽ học cách tạo, cấu hình, và kiểm tra VPC endpoints để cho phép workload của bạn tiếp cận các dịch vụ AWS mà không cần đi qua Internet công cộng.
+Hệ thống không phải luật sư và không đưa ra kết luận pháp lý chính thức. Nếu cơ sở dữ liệu thiếu căn cứ, hệ thống phải nói rõ.
 
-Chúng ta sẽ tạo hai loại endpoints để truy cập đến Amazon S3: gateway vpc endpoint và interface vpc endpoint. Hai loại vpc endpoints này mang đến nhiều lợi ích tùy thuộc vào việc bạn truy cập đến S3 từ môi trường cloud hay từ trung tâm dữ liệu (on-premise).
-+ **Gateway** - Tạo gateway endpoint để gửi lưu lượng đến Amazon S3 hoặc DynamoDB using private IP addresses. Bạn điều hướng lưu lượng từ VPC của bạn đến gateway endpoint bằng các bảng định tuyến (route tables)
-+ **Interface** - Tạo interface endpoint để gửi lưu lượng đến các dịch vụ điểm cuối (endpoints) sử dụng Network Load Balancer để phân phối lưu lượng. Lưu lượng dành cho dịch vụ điểm cuối được resolved bằng DNS.
-
+Hệ thống xây dựng trên kiến trúc serverless với các thành phần:
+* Giao diện – trang web tĩnh (index.html) host trên Amazon S3 (static website hosting)
+* Cổng API – Amazon API Gateway (CORS và chuẩn hóa lỗi)
+* Backend – AWS Lambda (Python): truy xuất điều luật và gọi LLM
+* Cơ sở tri thức – Amazon DynamoDB (bảng LegalArticles)
+* LLM – Groq API (qwen/qwen3.8-27b), dịch vụ bên ngoài AWS
+* Giám sát – Amazon CloudWatch
+![alt text](<../images/Sơ đồ kiến trúc & luồng dữ liệu.png>)
 #### Nội dung
 
 1. [Tổng quan về workshop](5.1-Workshop-overview/)
