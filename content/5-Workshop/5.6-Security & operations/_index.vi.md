@@ -27,6 +27,7 @@ pre : "  5.6  "
 #### 5.6.2. Giám sát và kiểm soát chi phí
 
 **Mục tiêu**
+
 Phát hiện sớm lỗi và chi phí bất thường.
 
 **Các bước**

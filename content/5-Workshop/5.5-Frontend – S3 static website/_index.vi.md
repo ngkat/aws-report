@@ -19,6 +19,7 @@ pre : "  5.5  "
 #### 5.5.1. Dựng giao diện chat (index.html)
 
 **Mục tiêu**
+
 Một trang tĩnh duy nhất gọi backend bằng fetch.
 
 **Các bước**
@@ -38,6 +39,7 @@ Mở index.html trên máy thấy trang chat và lời chào.
 #### 5.5.2. Host trang trên S3
 
 **Mục tiêu**
+
 Công khai index.html dưới dạng static website.
 
 **Các bước**

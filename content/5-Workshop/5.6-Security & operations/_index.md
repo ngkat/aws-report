@@ -27,6 +27,7 @@ pre : "  5.6  "
 #### 5.6.2. Monitoring and cost control
 
 **Goal**
+
 Detect errors and unexpected cost early.
 
 **Steps**

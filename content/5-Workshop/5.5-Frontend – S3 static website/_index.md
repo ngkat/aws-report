@@ -19,6 +19,7 @@ pre : "  5.5  "
 #### 5.5.1. Build the chat page (index.html)
 
 **Goal**
+
 A single static page that talks to the backend with fetch.
 
 **Steps**
@@ -38,6 +39,7 @@ Opening index.html locally shows the chat page and the welcome message.
 #### 5.5.2. Host the page on S3
 
 **Goal**
+
 Publish index.html as a static website.
 
 **Steps**
