@@ -1,108 +1,93 @@
 ---
 title: "Bản đề xuất"
-date: 2024-01-01
+date: 13-10-2026
 weight: 2
 chapter: false
-pre: " <b> 2. </b> "
+pre: "  2  "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-Tại phần này, bạn cần tóm tắt các nội dung trong workshop mà bạn **dự tính** sẽ làm.
 
-# IoT Weather Platform for Lab Research  
-## Giải pháp AWS Serverless hợp nhất cho giám sát thời tiết thời gian thực  
+# Hệ Thống RAG Tư vấn Pháp luật Tự động (Nghị định 13/2023/NĐ-CP)
+## Giải pháp Serverless Kết hợp LLM cho Tra cứu và Phân tích Dữ liệu Pháp lý Thời gian Thực
 
 ### 1. Tóm tắt điều hành  
-IoT Weather Platform được thiết kế dành cho nhóm *ITea Lab* tại TP. Hồ Chí Minh nhằm nâng cao khả năng thu thập và phân tích dữ liệu thời tiết. Nền tảng hỗ trợ tối đa 5 trạm thời tiết, có khả năng mở rộng lên 10–15 trạm, sử dụng thiết bị biên Raspberry Pi kết hợp cảm biến ESP32 để truyền dữ liệu qua MQTT. Nền tảng tận dụng các dịch vụ AWS Serverless để cung cấp giám sát thời gian thực, phân tích dự đoán và tiết kiệm chi phí, với quyền truy cập giới hạn cho 5 thành viên phòng lab thông qua Amazon Cognito.  
+Hệ thống Tư vấn Pháp luật Tự động (Legal RAG Platform) được thiết kế nhằm hỗ trợ người dùng và các thành viên trong đội ngũ tra cứu, phân tích nhanh chóng các quy định pháp luật phức tạp tại Việt Nam, đặc biệt tập trung vào **Nghị định 13/2023/NĐ-CP về bảo vệ dữ liệu cá nhân**. Hệ thống ứng dụng kiến trúc **Serverless** toàn diện trên nền tảng AWS kết hợp với mô hình ngôn ngữ lớn mạnh mẽ từ **Groq API (qwen/qwen3.8-27b)**. Giải pháp mang lại khả năng truy vấn dữ liệu chính xác dựa trên ngữ cảnh thực tế, loại bỏ tình trạng bịa đặt thông tin (hallucination) của AI, đồng thời tối ưu hóa chi phí vận hành ở mức tối thiểu ($0 nhờ tận dụng AWS Free Tier).  
 
 ### 2. Tuyên bố vấn đề  
 *Vấn đề hiện tại*  
-Các trạm thời tiết hiện tại yêu cầu thu thập dữ liệu thủ công, khó quản lý khi có nhiều trạm. Không có hệ thống tập trung cho dữ liệu hoặc phân tích thời gian thực, và các nền tảng bên thứ ba thường tốn kém và quá phức tạp.  
+* Các văn bản pháp luật như Nghị định 13/2023/NĐ-CP rất dài, khô khan và khó tra cứu thủ công đối với người không chuyên.
+* Các công cụ AI tổng quát thông thường (như ChatGPT bản free) thường thiếu dữ liệu chuyên sâu về luật pháp Việt Nam hoặc dễ đưa ra các câu trả lời chung chung, thiếu căn cứ pháp lý chính xác.
+* Việc xây dựng một hệ thống AI tự túc thường tốn kém chi phí phần cứng và phức tạp trong khâu vận hành máy chủ.
 
 *Giải pháp*  
-Nền tảng sử dụng AWS IoT Core để tiếp nhận dữ liệu MQTT, AWS Lambda và API Gateway để xử lý, Amazon S3 để lưu trữ (bao gồm data lake), và AWS Glue Crawlers cùng các tác vụ ETL để trích xuất, chuyển đổi, tải dữ liệu từ S3 data lake sang một S3 bucket khác để phân tích. AWS Amplify với Next.js cung cấp giao diện web, và Amazon Cognito đảm bảo quyền truy cập an toàn. Tương tự như Thingsboard và CoreIoT, người dùng có thể đăng ký thiết bị mới và quản lý kết nối, nhưng nền tảng này hoạt động ở quy mô nhỏ hơn và phục vụ mục đích sử dụng nội bộ. Các tính năng chính bao gồm bảng điều khiển thời gian thực, phân tích xu hướng và chi phí vận hành thấp.  
+* Xây dựng luồng **RAG (Retrieval-Augmented Generation)** tự động: Khi người dùng đặt câu hỏi, hệ thống sẽ quét cơ sở dữ liệu để lấy các điều khoản luật chính xác nhất, sau đó tiêm (inject) vào System Prompt để LLM xử lý và đưa ra câu trả lời có trích dẫn điều khoản rõ ràng.
+* Sử dụng **Amazon DynamoDB** làm kho lưu trữ các điều khoản luật (`LegalArticles`) đã được trích xuất.
+* Sử dụng **AWS Lambda** làm tầng xử lý logic backend, kết hợp với **Amazon API Gateway** để cung cấp điểm cuối (API Endpoint) ổn định.
+* Tích hợp **Groq API** với mô hình `qwen/qwen3.8-27b` để sinh câu trả lời thông minh, mạch lạc.
+* Giao diện web tĩnh lưu trữ trên **Amazon S3 Static Website** giúp người dùng tương tác trực quan qua khung chat.
 
 *Lợi ích và hoàn vốn đầu tư (ROI)*  
-Giải pháp tạo nền tảng cơ bản để các thành viên phòng lab phát triển một nền tảng IoT lớn hơn, đồng thời cung cấp nguồn dữ liệu cho những người nghiên cứu AI phục vụ huấn luyện mô hình hoặc phân tích. Nền tảng giảm bớt báo cáo thủ công cho từng trạm thông qua hệ thống tập trung, đơn giản hóa quản lý và bảo trì, đồng thời cải thiện độ tin cậy dữ liệu. Chi phí hàng tháng ước tính 0,66 USD (theo AWS Pricing Calculator), tổng cộng 7,92 USD cho 12 tháng. Tất cả thiết bị IoT đã được trang bị từ hệ thống trạm thời tiết hiện tại, không phát sinh chi phí phát triển thêm. Thời gian hoàn vốn 6–12 tháng nhờ tiết kiệm đáng kể thời gian thao tác thủ công.  
+* **Độ chính xác cao:** Câu trả lời luôn bám sát ngữ cảnh văn bản luật được cung cấp, minh bạch và có căn cứ.
+* **Tối ưu chi phí:** Vận hành hoàn toàn theo mô hình Serverless, tận dụng tối đa AWS Free Tier với chi phí duy trì hàng tháng gần như **$0**.
+* **Dễ dàng mở rộng:** Kiến trúc tách rời (Decoupled Architecture) giúp dễ dàng bổ sung thêm các bộ luật mới (như Luật An toàn thông tin mạng, Luật Công nghệ thông tin) vào DynamoDB trong tương lai.
 
 ### 3. Kiến trúc giải pháp  
-Nền tảng áp dụng kiến trúc AWS Serverless để quản lý dữ liệu từ 5 trạm dựa trên Raspberry Pi, có thể mở rộng lên 15 trạm. Dữ liệu được tiếp nhận qua AWS IoT Core, lưu trữ trong S3 data lake và xử lý bởi AWS Glue Crawlers và ETL jobs để chuyển đổi và tải vào một S3 bucket khác cho mục đích phân tích. Lambda và API Gateway xử lý bổ sung, trong khi Amplify với Next.js cung cấp bảng điều khiển được bảo mật bởi Cognito.  
+Hệ thống áp dụng mô hình kiến trúc Serverless, kết nối khép kín từ Frontend đến Backend và LLM bên ngoài. 
 
 ![IoT Weather Station Architecture](/images/2-Proposal/edge_architecture.jpeg)
 
 ![IoT Weather Platform Architecture](/images/2-Proposal/platform_architecture.jpeg)
 
 *Dịch vụ AWS sử dụng*  
-- *AWS IoT Core*: Tiếp nhận dữ liệu MQTT từ 5 trạm, mở rộng lên 15.  
-- *AWS Lambda*: Xử lý dữ liệu và kích hoạt Glue jobs (2 hàm).  
-- *Amazon API Gateway*: Giao tiếp với ứng dụng web.  
-- *Amazon S3*: Lưu trữ dữ liệu thô (data lake) và dữ liệu đã xử lý (2 bucket).  
-- *AWS Glue*: Crawlers lập chỉ mục dữ liệu, ETL jobs chuyển đổi và tải dữ liệu.  
-- *AWS Amplify*: Lưu trữ giao diện web Next.js.  
-- *Amazon Cognito*: Quản lý quyền truy cập cho người dùng phòng lab.  
+- **Amazon S3 Static Website:** Lưu trữ và phục vụ giao diện trang web tĩnh (`index.html`, CSS, JS) cho người dùng. 
+- **Amazon API Gateway:** Cung cấp HTTP/REST API công khai, xử lý cơ chế CORS, làm cổng tiếp nhận request từ client chuyển đến Lambda.  
+- **AWS Lambda (Python):** Thực thi mã nguồn backend xử lý logic RAG, gọi dữ liệu từ DynamoDB và tương tác với Groq API.  
+- **Amazon DynamoDB (`LegalArticles`):** Lưu trữ cấu trúc các điều khoản luật, hỗ trợ truy vấn từ khóa tốc độ cao.  
+- **Groq API (`qwen/qwen3.8-27b`):** Đảm nhận nhiệm vụ tổng hợp và phân tích ngôn ngữ tự nhiên dựa trên ngữ cảnh luật được truyền vào.
 
 *Thiết kế thành phần*  
-- *Thiết bị biên*: Raspberry Pi thu thập và lọc dữ liệu cảm biến, gửi tới IoT Core.  
-- *Tiếp nhận dữ liệu*: AWS IoT Core nhận tin nhắn MQTT từ thiết bị biên.  
-- *Lưu trữ dữ liệu*: Dữ liệu thô lưu trong S3 data lake; dữ liệu đã xử lý lưu ở một S3 bucket khác.  
-- *Xử lý dữ liệu*: AWS Glue Crawlers lập chỉ mục dữ liệu; ETL jobs chuyển đổi để phân tích.  
-- *Giao diện web*: AWS Amplify lưu trữ ứng dụng Next.js cho bảng điều khiển và phân tích thời gian thực.  
-- *Quản lý người dùng*: Amazon Cognito giới hạn 5 tài khoản hoạt động.  
+- **Giao diện Người dùng (Frontend):** Người dùng truy cập trang web từ S3, nhập câu hỏi vào khung chat. Trình duyệt gửi HTTP POST Request chứa câu hỏi qua HTTPS tới API Gateway.
+- **Cổng giao tiếp (API Gateway):** Tiếp nhận request, kiểm tra bảo mật CORS và chuyển tiếp payload dữ liệu tới hàm Lambda.
+- **Truy vấn Dữ liệu (Retrieval - DynamoDB):** Hàm Lambda thực hiện hàm `retrieve_legal_context` để quét và tìm kiếm các điều khoản liên quan trong bảng `LegalArticles` (ví dụ: quy định xử lý vi phạm liên quan đến CCCD, dữ liệu cá nhân theo Nghị định 13).
+- **Tăng cường & Sinh văn bản (Augmentation & Generation - Groq API):** Lambda đóng gói câu hỏi của người dùng kèm theo ngữ cảnh luật vừa lấy được vào một System Prompt có ràng buộc nghiêm ngặt (chỉ trả lời dựa trên ngữ cảnh được cung cấp), sau đó gọi sang Groq API.
+- **Phản hồi (Response Flow):** Groq trả kết quả về Lambda, Lambda định dạng lại cấu trúc JSON chuẩn và trả về qua API Gateway để hiển thị lên khung chat của người dùng.
 
 ### 4. Triển khai kỹ thuật  
-*Các giai đoạn triển khai*  
-Dự án gồm 2 phần — thiết lập trạm thời tiết biên và xây dựng nền tảng thời tiết — mỗi phần trải qua 4 giai đoạn:  
-1. *Nghiên cứu và vẽ kiến trúc*: Nghiên cứu Raspberry Pi với cảm biến ESP32 và thiết kế kiến trúc AWS Serverless (1 tháng trước kỳ thực tập).  
-2. *Tính toán chi phí và kiểm tra tính khả thi*: Sử dụng AWS Pricing Calculator để ước tính và điều chỉnh (Tháng 1).  
-3. *Điều chỉnh kiến trúc để tối ưu chi phí/giải pháp*: Tinh chỉnh (ví dụ tối ưu Lambda với Next.js) để đảm bảo hiệu quả (Tháng 2).  
-4. *Phát triển, kiểm thử, triển khai*: Lập trình Raspberry Pi, AWS services với CDK/SDK và ứng dụng Next.js, sau đó kiểm thử và đưa vào vận hành (Tháng 2–3).  
+*Các giai đoạn triển khai*
+1. **Định hình Prompt & Cơ chế RAG:** Xây dựng System Prompt định hướng vai trò chuyên gia luật, thiết lập ràng buộc ngữ cảnh (Context Constraint) tuyệt đối không bịa đặt thông tin.
+2. **Triển khai Backend & Database:**
+* Tạo bảng DynamoDB LegalArticles.
+* Viết mã Python trên AWS Lambda tích hợp hàm truy xuất dữ liệu và gọi Groq API.
+* Cấu hình API Gateway, bật CORS Headers và xây dựng tầng bắt lỗi chuẩn hóa (mã 400, 502/504, và xử lý mã 429 khi quá giới hạn Groq API).
+3. **Kiểm thử & Hoàn thiện:** Sử dụng lệnh `curl` gửi HTTP POST test hoặc test trực tiếp trên giao diện web, kiểm tra log trên Amazon CloudWatch.
 
-*Yêu cầu kỹ thuật*  
-- *Trạm thời tiết biên*: Cảm biến (nhiệt độ, độ ẩm, lượng mưa, tốc độ gió), vi điều khiển ESP32, Raspberry Pi làm thiết bị biên. Raspberry Pi chạy Raspbian, sử dụng Docker để lọc dữ liệu và gửi 1 MB/ngày/trạm qua MQTT qua Wi-Fi.  
-- *Nền tảng thời tiết*: Kiến thức thực tế về AWS Amplify (lưu trữ Next.js), Lambda (giảm thiểu do Next.js xử lý), AWS Glue (ETL), S3 (2 bucket), IoT Core (gateway và rules), và Cognito (5 người dùng). Sử dụng AWS CDK/SDK để lập trình (ví dụ IoT Core rules tới S3). Next.js giúp giảm tải Lambda cho ứng dụng web fullstack.  
 
 ### 5. Lộ trình & Mốc triển khai  
-- *Trước thực tập (Tháng 0)*: 1 tháng lên kế hoạch và đánh giá trạm cũ.  
-- *Thực tập (Tháng 1–3)*:  
-    - Tháng 1: Học AWS và nâng cấp phần cứng.  
-    - Tháng 2: Thiết kế và điều chỉnh kiến trúc.  
-    - Tháng 3: Triển khai, kiểm thử, đưa vào sử dụng.  
-- *Sau triển khai*: Nghiên cứu thêm trong vòng 1 năm.  
+- **Giai đoạn Nghiên cứu & Thiết kế:** Xác định phạm vi luật (Nghị định 13/2023/NĐ-CP) và thiết kế luồng dữ liệu RAG.
+- **Giai đoạn Lập trình & Triển khai:** Xây dựng cơ sở dữ liệu DynamoDB, hoàn thiện hàm Lambda và cấu hình API Gateway.
+- **Giai đoạn Tích hợp & Kiểm thử:** Kết nối giao diện S3 Static Website với API Gateway, test độ chính xác của câu trả lời từ Groq LLM và tối ưu hóa xử lý lỗi.
 
 ### 6. Ước tính ngân sách  
-Có thể xem chi phí trên [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01)  
-Hoặc tải [tệp ước tính ngân sách](../attachments/budget_estimation.pdf).  
 
-*Chi phí hạ tầng*  
-- AWS Lambda: 0,00 USD/tháng (1.000 request, 512 MB lưu trữ).  
-- S3 Standard: 0,15 USD/tháng (6 GB, 2.100 request, 1 GB quét).  
-- Truyền dữ liệu: 0,02 USD/tháng (1 GB vào, 1 GB ra).  
-- AWS Amplify: 0,35 USD/tháng (256 MB, request 500 ms).  
-- Amazon API Gateway: 0,01 USD/tháng (2.000 request).  
-- AWS Glue ETL Jobs: 0,02 USD/tháng (2 DPU).  
-- AWS Glue Crawlers: 0,07 USD/tháng (1 crawler).  
-- MQTT (IoT Core): 0,08 USD/tháng (5 thiết bị, 45.000 tin nhắn).  
+- **AWS Infrastructure:**
+* Amazon S3: Miễn phí (trong hạn mức Free Tier).
+* Amazon API Gateway: Miễn phí (trong hạn mức 1 triệu request đầu tiên/tháng).
+* AWS Lambda: Miễn phí (trong hạn mức 1 triệu request/tháng).
+* Amazon DynamoDB: Miễn phí (25GB storage, 25 WCU / 25 RCU).
+- **Groq API:** Sử dụng gói miễn phí cho mô hình mã nguồn mở (`qwen/qwen3.8-27b`).
 
-*Tổng*: 0,7 USD/tháng, 8,40 USD/12 tháng  
-- *Phần cứng*: 265 USD một lần (Raspberry Pi 5 và cảm biến).  
+*Tổng*: 0 USD
 
 ### 7. Đánh giá rủi ro  
-*Ma trận rủi ro*  
-- Mất mạng: Ảnh hưởng trung bình, xác suất trung bình.  
-- Hỏng cảm biến: Ảnh hưởng cao, xác suất thấp.  
-- Vượt ngân sách: Ảnh hưởng trung bình, xác suất thấp.  
+*Rủi ro quá tải API (Rate Limit từ Groq API - Lỗi 429):*  
+- Giải pháp: Xây dựng cơ chế bắt lỗi (Error Handling) và thông báo thân thiện tới người dùng trên giao diện chat khi hệ thống vượt quá tần suất gọi tạm thời.
 
-*Chiến lược giảm thiểu*  
-- Mạng: Lưu trữ cục bộ trên Raspberry Pi với Docker.  
-- Cảm biến: Kiểm tra định kỳ, dự phòng linh kiện.  
-- Chi phí: Cảnh báo ngân sách AWS, tối ưu dịch vụ.  
+*Rủi ro AI trả lời sai lệch (Hallucination):*  
+- Giải pháp: Thắt chặt System Prompt với quy tắc bắt buộc chỉ được sử dụng ngữ cảnh luật được cung cấp từ DynamoDB, tuyệt đối không tự suy diễn ngoài luồng.
 
-*Kế hoạch dự phòng*  
-- Quay lại thu thập thủ công nếu AWS gặp sự cố.  
-- Sử dụng CloudFormation để khôi phục cấu hình liên quan đến chi phí.  
+*Rủi ro lỗi CORS trên trình duyệt:*  
+- Giải pháp: Cấu hình đầy đủ CORS Headers (`Access-Control-Allow-Origin: *, POST, OPTIONS`) trực tiếp trên API Gateway.
 
 ### 8. Kết quả kỳ vọng  
-*Cải tiến kỹ thuật*: Dữ liệu và phân tích thời gian thực thay thế quy trình thủ công. Có thể mở rộng tới 10–15 trạm.  
-*Giá trị dài hạn*: Nền tảng dữ liệu 1 năm cho nghiên cứu AI, có thể tái sử dụng cho các dự án tương lai.
+*Thành quả kỹ thuật*:  Xây dựng thành công một hệ thống Serverless Backend hoàn chỉnh, tự động co giãn, hoạt động ổn định và tối ưu chi phí tuyệt đối ($0).
+*Giá trị thực tiễn*: Cung cấp một cổng giao tiếp API chuẩn hóa và giao diện chat trực quan giúp tra cứu nhanh chóng, chính xác các quy định pháp luật cốt lõi trong Nghị định 13/2023/NĐ-CP, phục vụ hiệu quả cho học tập và nghiên cứu.
