@@ -7,7 +7,6 @@ pre: "  5  "
 ---
 
 
-
 # AI Legal & Security Assistant
 RAG Serverless tra cứu pháp lý & bảo vệ dữ liệu trên AWS
 
@@ -27,6 +26,7 @@ Hệ thống xây dựng trên kiến trúc serverless với các thành phần:
 
 ![alt text](<../images/Sơ đồ kiến trúc & luồng dữ liệu.png>)
 Sơ đồ kiến trúc & luồng dữ liệu
+
 #### Nội dung
 
 1. [Giới thiệu](5.1-Introduction/)
