@@ -34,10 +34,6 @@ The Automated Legal RAG Platform is designed to assist users and team members in
 ### 3. Solution Architecture
 The system employs a Serverless architecture, seamlessly connecting the Frontend, Backend, and external LLM.
 
-![IoT Weather Station Architecture](/images/2-Proposal/edge_architecture.jpeg)
-
-![IoT Weather Platform Architecture](/images/2-Proposal/platform_architecture.jpeg)
-
 ### AWS Services Used
 - **Amazon S3 Static Website:** Stores and serves the static website interface (`index.html`, CSS, JS) to users.
 - **Amazon API Gateway:** Provides a public HTTP/REST API, handles CORS, and acts as the entry point for client requests to Lambda.

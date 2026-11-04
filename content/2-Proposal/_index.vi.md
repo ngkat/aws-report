@@ -34,10 +34,6 @@ Hệ thống Tư vấn Pháp luật Tự động (Legal RAG Platform) được t
 ### 3. Kiến trúc giải pháp  
 Hệ thống áp dụng mô hình kiến trúc Serverless, kết nối khép kín từ Frontend đến Backend và LLM bên ngoài. 
 
-![IoT Weather Station Architecture](/images/2-Proposal/edge_architecture.jpeg)
-
-![IoT Weather Platform Architecture](/images/2-Proposal/platform_architecture.jpeg)
-
 ### Dịch vụ AWS sử dụng
 - **Amazon S3 Static Website:** Lưu trữ và phục vụ giao diện trang web tĩnh (`index.html`, CSS, JS) cho người dùng. 
 - **Amazon API Gateway:** Cung cấp HTTP/REST API công khai, xử lý cơ chế CORS, làm cổng tiếp nhận request từ client chuyển đến Lambda.  
