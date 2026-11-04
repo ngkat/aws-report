@@ -24,13 +24,17 @@ The system is built on a serverless architecture with these components:
 * LLM – Groq API (qwen/qwen3.8-27b), an external service outside AWS
 * Monitoring – Amazon CloudWatch
 
+![alt text](<../images/Architecture and data-flow diagram.png>)
 
+Architecture and data-flow diagram
 
 #### Content
 
-1. [Workshop overview](5.1-Workshop-overview)
+1. [Introduction](5.1-Introduction/)
 2. [Prerequiste](5.2-Prerequiste/)
-3. [Access S3 from VPC](5.3-S3-vpc/)
-4. [Access S3 from On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (Bonus)](5.5-Policy/)
-6. [Clean up](5.6-Cleanup/)
+3. [Phase 1 – Prompt setup and RAG mechanism](<5.3-Phase 1 – Prompt setup and RAG mechanism>)
+4. [Phase 2 – Backend: from database to Lambda and API](<5.4-Phase 2 – Backend from database to Lambda and API>)
+5. [Frontend – S3 static website](<5.5-Frontend – S3 static website>)
+6. [Security & operations](<5.6-Security & operations>)
+7. [Final output and next steps](<5.7-Final output and next steps>)
+8. [Clean up](5.6-Cleanup/)
