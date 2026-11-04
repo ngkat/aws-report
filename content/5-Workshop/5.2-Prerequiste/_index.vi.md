@@ -36,6 +36,7 @@ Lambda chỉ cần hai quyền: đọc bảng LegalArticles và ghi log. Thay ph
     ]
 }
 ```
+
 Gắn thêm managed policy AWSLambdaBasicExecutionRole để Lambda ghi được log vào CloudWatch.
 
 ![alt text](../../images/AWSLambdaBasicExecutionRole.png)
@@ -87,7 +88,7 @@ API key vừa được tạo:
 | Tài nguyên | Tên | Ghi chú |
 | ---------- | --- | ------- |
 | S3 Bucket | ai-legal-assistant-frontend-hau | Static website hosting |
-| DynamoDB | LegalArticles | Static website hosting |
+| DynamoDB | LegalArticles | Cơ sở tri thức |
 | Lambda | Hàm Lambda của nhóm | Python |
 | API Gateway | API của nhóm | Endpoint công khai cho website gọi |
 
