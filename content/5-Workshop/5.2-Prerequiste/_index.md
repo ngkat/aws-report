@@ -1,9 +1,9 @@
 ---
 title : "Prerequiste"
-date : 2024-01-01 
+date : 15-10-2026
 weight : 2 
 chapter : false
-pre : " <b> 5.2. </b> "
+pre : "  5.2  "
 ---
 
 #### IAM permissions
