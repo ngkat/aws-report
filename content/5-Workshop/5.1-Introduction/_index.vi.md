@@ -18,6 +18,7 @@ pre : "  5.1  "
 Nhân viên cần câu trả lời nhanh về quy định dữ liệu cá nhân (ví dụ dùng dữ liệu CCCD của khách hàng để gửi quảng cáo). Chatbot công cộng có thể bịa điều luật hoặc trích dẫn. Mục tiêu: câu trả lời chỉ bám vào văn bản pháp luật nhóm cung cấp, chạy trên AWS với chi phí gần như bằng 0.
 
 ![alt text](<../../images/Sơ đồ kiến trúc & luồng dữ liệu có đánh số bước 1-8.png>)
+
 Sơ đồ kiến trúc & luồng dữ liệu có đánh số bước 1-8
 
 #### Kiến trúc và luồng dữ liệu
