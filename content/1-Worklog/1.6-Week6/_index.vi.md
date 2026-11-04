@@ -12,13 +12,13 @@ pre: "  1.6  "
 * Tiếp tục hoàn thiện project nhóm.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Set up Backend với AWS Console <br>&emsp; + Gọi Groq API(dùng model `qwen/qwen3.8-27b`)                                                                                             | 19/10/2026   | 19/10/2026      |
-| 3   | - Set up Backend với AWS Console <br>&emsp; + Xây dựng quy trình RAG                                            | 20/10/2026   | 20/10/2026      |
-| 4   | - Set up Backend với AWS Console <br>&emsp; + Xây dựng Amazon API Gateway  | 21/10/2026   | 21/10/2026      |
-| 5   | - Set up Backend với AWS Console <br>&emsp; + Input Validation <br>&emsp; + Standardized Error Handling                  | 22/10/2026   | 22/10/2026      |
-| 6   | - Set up Backend với AWS Console <br>&emsp; + Xây dựng giao diện Web Chat (Frontend)                                                                                         | 23/10/2026   | 23/10/2026      |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --------- | ------------ | --------------- | -------------- |
+| 2   | - Set up Backend với AWS Console <br>&emsp; + Gọi Groq API(dùng model `qwen/qwen3.8-27b`) | 19/10/2026 | 19/10/2026 |
+| 3   | - Set up Backend với AWS Console <br>&emsp; + Xây dựng quy trình RAG | 20/10/2026 | 20/10/2026 |
+| 4   | - Set up Backend với AWS Console <br>&emsp; + Xây dựng Amazon API Gateway | 21/10/2026 | 21/10/2026 |
+| 5   | - Set up Backend với AWS Console <br>&emsp; + Input Validation <br>&emsp; + Standardized Error Handling | 22/10/2026 | 22/10/2026 |
+| 6   | - Set up Backend với AWS Console <br>&emsp; + Xây dựng giao diện Web Chat (Frontend) | 23/10/2026 | 23/10/2026 |
 
 
 ### Kết quả đạt được tuần 6:

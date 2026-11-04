@@ -12,8 +12,8 @@ pre: "  1.5  "
 * Tiến hành làm việc với project nhóm.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --------- | ------------ | --------------- | -------------- |
 | 2   | - Tìm concept chính cho project <br> - Thảo luận nhóm, trao đổi ý kiến và ý tưởng giữa các thành viên <br> - Sàng lọc, cân nhắc và chọn ra concept cuối cùng                                                                                             | 12/10/2026   | 12/10/2026      |
 | 3   | - Brainstorm, xây dựng định hướng cho project <br> - Tạo bộ khung nền tảng để vận hành <br> - Phân công công việc sơ bộ cho các thành viên                                            | 13/10/2026   | 13/10/2026      |
 | 4   | - Set up Backend với AWS Console <br>&emsp; + API Gateway <br>&emsp; + Lambda | 14/10/2026   | 14/10/2026      |
