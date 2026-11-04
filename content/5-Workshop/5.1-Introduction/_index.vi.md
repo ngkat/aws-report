@@ -17,11 +17,11 @@ pre : "  5.1  "
 
 Nhân viên cần câu trả lời nhanh về quy định dữ liệu cá nhân (ví dụ dùng dữ liệu CCCD của khách hàng để gửi quảng cáo). Chatbot công cộng có thể bịa điều luật hoặc trích dẫn. Mục tiêu: câu trả lời chỉ bám vào văn bản pháp luật nhóm cung cấp, chạy trên AWS với chi phí gần như bằng 0.
 
-![alt text](<../../images/Sơ đồ kiến trúc & luồng dữ liệu có đánh số bước 1-8.png>)
+#### Kiến trúc và luồng dữ liệu
+
+![alt text](<../../images/Architecture and data-flow diagram with numbered steps 1-8.png>)
 
 Sơ đồ kiến trúc & luồng dữ liệu có đánh số bước 1-8
-
-#### Kiến trúc và luồng dữ liệu
 
 1. Người dùng mở website trên S3, gõ câu hỏi vào khung chat và gửi. index.html gửi HTTP POST qua HTTPS tới API Gateway.
 2. API Gateway kiểm tra CORS và chuyển payload vào hàm Lambda.
@@ -41,6 +41,7 @@ Sơ đồ kiến trúc & luồng dữ liệu có đánh số bước 1-8
 | Backend API | API Gateway + Lambda |
 | Frontend | S3 static website – index.html |
 | Bảo mật & vận hành | CloudWatch, Budgets, IAM |
+
 #### Đã triển khai và dự kiến
 
 Hệ thống khác thiết kế ban đầu ở một số điểm. Bảng này giúp workshop nói đúng về những gì đang có.
