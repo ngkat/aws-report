@@ -48,10 +48,15 @@ Publish index.html as a static website.
 5. Open the website endpoint.
 
 ![alt text](../../images/s3_bucket_policy_1.png)
+1: Create an S3 bucket in the ap-southeast-2 region, select the "General purpose" type, and name the bucket.
 ![alt text](../../images/s3_bucket_policy_2.png)
+2: Deselect "Block all public access" for this specific bucket and confirm the warning.
 ![alt text](../../images/s3_bucket_policy_3.png)
+3: Keep the default SSE-S3 encryption and select Create bucket.
 ![alt text](../../images/s3_bucket_policy_4.png)
+4: The bucket has been created; the list of objects is empty.
 ![alt text](../../images/s3_bucket_policy_5.png)
+5: Upload page for uploading the index.html file to the bucket.
 
 **Verify**
 
@@ -69,8 +74,11 @@ Make the live page call the real backend.
 4. Check the request in CloudWatch Logs.
 
 ![alt text](../../images/e2e_results_1.png)
+1: In the bucket's Properties tab, view information such as the Region, ARN, and creation date.
 ![alt text](../../images/e2e_results_2.png)
+2: The "Static website hosting" section is currently set to "Disabled"; select "Edit."
 ![alt text](../../images/e2e_results_3.png)
+3: Enable "Static website hosting," select "Host a static website," and set the "Index document" to "index.html."
 
 **Verify**
 

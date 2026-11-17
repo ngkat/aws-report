@@ -48,10 +48,15 @@ Công khai index.html dưới dạng static website.
 5. Mở website endpoint.
 
 ![alt text](../../images/s3_bucket_policy_1.png)
+1: Tạo bucket S3 ở region ap-southeast-2, loại General purpose, đặt tên bucket.
 ![alt text](../../images/s3_bucket_policy_2.png)
+2: Bỏ chọn Block all public access cho riêng bucket này và xác nhận cảnh báo.
 ![alt text](../../images/s3_bucket_policy_3.png)
+3: Giữ mã hóa mặc định SSE-S3 và chọn Create bucket.
 ![alt text](../../images/s3_bucket_policy_4.png)
+4: Bucket đã được tạo, danh sách Objects đang trống.
 ![alt text](../../images/s3_bucket_policy_5.png)
+5: Trang Upload để tải file index.html lên bucket.
 
 **Kiểm tra**
 
@@ -69,8 +74,11 @@ Cho trang đã deploy gọi backend thật.
 4. Kiểm tra request trong CloudWatch Logs.
 
 ![alt text](../../images/e2e_results_1.png)
+1: Tab Properties của bucket, xem thông tin Region, ARN và ngày tạo.
 ![alt text](../../images/e2e_results_2.png)
+2: Mục Static website hosting đang ở trạng thái Disabled, chọn Edit.
 ![alt text](../../images/e2e_results_3.png)
+3: Bật Static website hosting, chọn Host a static website và đặt Index document là index.html.
 
 **Kiểm tra**
 
