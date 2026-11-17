@@ -23,4 +23,4 @@ pre: "  1.8  "
 
 ### Kết quả đạt được tuần 8:
 
-* Fill số lượng lớn nội dung vào các khoảng trống của template, tuy vậy report còn trống nhiều chỗ
+* Fill số lượng lớn nội dung vào các khoảng trống của template, tuy vậy report còn trống nhiều chỗ.
