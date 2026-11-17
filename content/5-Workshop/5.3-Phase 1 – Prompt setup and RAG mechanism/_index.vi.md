@@ -9,6 +9,7 @@ pre : "  5.3  "
 #### Tổng quan
 
 | Mục         | Nội dung                                                                           |
+| ----------- | ---------------------------------------------------------------------------------- |
 | Mục đích    | Định hình cách mô hình ngôn ngữ nhận và xử lý dữ liệu pháp lý trước khi viết code. |
 | Dịch vụ AWS | Không (thiết kế; test trong Groq playground).                                      |
 | Đầu ra      | System prompt và mẫu prompt dùng trong Lambda.                                     |
