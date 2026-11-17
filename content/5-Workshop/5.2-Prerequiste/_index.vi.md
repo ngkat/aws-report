@@ -107,11 +107,10 @@ API key vừa được tạo:
 
 Tạo AWS Budget có cảnh báo email trước khi xây bất cứ thứ gì. Mục tiêu dự án là $0 trong Free Tier; cảnh báo giúp phát hiện bất thường.
 
-[ CHÈN ẢNH CHỤP ]
-
-Đã cấu hình cảnh báo AWS Budget
-
-5.2-Prerequisite/budget-alert.png
+![alt text](../../images/budget_alert_1.png)
+![alt text](../../images/budget_alert_2.png)
+![alt text](../../images/budget_alert_3.png)
+![alt text](../../images/budget_alert_4.png)
 
 #### Tài liệu pháp luật
 

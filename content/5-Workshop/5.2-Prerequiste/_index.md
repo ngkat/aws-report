@@ -77,11 +77,10 @@ Create an account at console.groq.com and generate an API key. The key goes into
 
 Create an AWS Budget with an email alert before building anything. The project target is $0 on Free Tier; an alert catches surprises.
 
-[ INSERT SCREENSHOT ]
-
-AWS Budget alert configured
-
-5.2-Prerequisite/budget-alert.png
+![alt text](../../images/budget_alert_1.png)
+![alt text](../../images/budget_alert_2.png)
+![alt text](../../images/budget_alert_3.png)
+![alt text](../../images/budget_alert_4.png)
 
 #### Legal documents
 
