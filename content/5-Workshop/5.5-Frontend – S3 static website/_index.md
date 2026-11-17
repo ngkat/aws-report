@@ -28,9 +28,7 @@ A single static page that talks to the backend with fetch.
 3. Show a clear message for errors (400, 429, 502/504).
 4. Recommended: add a visible disclaimer that answers are preliminary and not legal advice.
 
-[ INSERT SCREENSHOT ]
-The chat page of the live site
-5.5-Frontend/frontend-ui.png
+![alt text](../../images/frontend_ui.png)
 
 **Verify**
 
@@ -49,15 +47,11 @@ Publish index.html as a static website.
 4. Allow public read of this bucket only (turn off Block Public Access for it and add a read-only bucket policy).
 5. Open the website endpoint.
 
-Security: the bucket is public on purpose, so it may hold only the frontend files. Never put API keys in index.html. S3 website endpoints serve HTTP only.
-
-[ INSERT SCREENSHOT ]
-Static website hosting settings
-5.5-Frontend/s3-website.png
-
-[ INSERT SCREENSHOT ]
-Public-read bucket policy
-5.5-Frontend/s3-bucket-policy.png
+![alt text](../../images/s3_bucket_policy_1.png)
+![alt text](../../images/s3_bucket_policy_2.png)
+![alt text](../../images/s3_bucket_policy_3.png)
+![alt text](../../images/s3_bucket_policy_4.png)
+![alt text](../../images/s3_bucket_policy_5.png)
 
 **Verify**
 
@@ -74,9 +68,9 @@ Make the live page call the real backend.
 3. Open the browser developer console and check there is no CORS error.
 4. Check the request in CloudWatch Logs.
 
-[ INSERT SCREENSHOT ]
-An answer displayed on the live site
-5.5-Frontend/e2e-result.png
+![alt text](../../images/e2e_results_1.png)
+![alt text](../../images/e2e_results_2.png)
+![alt text](../../images/e2e_results_3.png)
 
 **Verify**
 

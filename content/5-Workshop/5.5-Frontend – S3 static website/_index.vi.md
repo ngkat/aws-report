@@ -28,9 +28,7 @@ Một trang tĩnh duy nhất gọi backend bằng fetch.
 3. Hiển thị thông báo rõ ràng cho các lỗi (400, 429, 502/504).
 4. Khuyến nghị: thêm disclaimer hiển thị rằng câu trả lời là sơ bộ, không phải tư vấn pháp lý.
 
-[ CHÈN ẢNH CHỤP ]
-Trang chat của website đã deploy
-5.5-Frontend/frontend-ui.png
+![alt text](../../images/frontend_ui.png)
 
 **Kiểm tra**
 
@@ -49,15 +47,11 @@ Công khai index.html dưới dạng static website.
 4. Cho phép đọc công khai riêng bucket này (tắt Block Public Access cho nó và thêm bucket policy chỉ đọc).
 5. Mở website endpoint.
 
-Bảo mật: bucket công khai có chủ đích, nên chỉ chứa file frontend. Không đặt API key trong index.html. Website endpoint của S3 chỉ phục vụ HTTP.
-
-[ CHÈN ẢNH CHỤP ]
-Cài đặt Static website hosting
-5.5-Frontend/s3-website.png
-
-[ CHÈN ẢNH CHỤP ]
-Bucket policy cho phép đọc công khai
-5.5-Frontend/s3-bucket-policy.png
+![alt text](../../images/s3_bucket_policy_1.png)
+![alt text](../../images/s3_bucket_policy_2.png)
+![alt text](../../images/s3_bucket_policy_3.png)
+![alt text](../../images/s3_bucket_policy_4.png)
+![alt text](../../images/s3_bucket_policy_5.png)
 
 **Kiểm tra**
 
@@ -74,9 +68,9 @@ Cho trang đã deploy gọi backend thật.
 3. Mở console của trình duyệt và kiểm tra không có lỗi CORS.
 4. Kiểm tra request trong CloudWatch Logs.
 
-[ CHÈN ẢNH CHỤP ]
-Câu trả lời hiển thị trên website
-5.5-Frontend/e2e-result.png
+![alt text](../../images/e2e_results_1.png)
+![alt text](../../images/e2e_results_2.png)
+![alt text](../../images/e2e_results_3.png)
 
 **Kiểm tra**
 
