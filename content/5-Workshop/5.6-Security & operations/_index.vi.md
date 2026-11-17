@@ -35,9 +35,12 @@ Phát hiện sớm lỗi và chi phí bất thường.
 2. Tạo alarm cho lỗi Lambda (tùy chọn).
 3. Thường xuyên xem trang Free Tier usage trong Billing và giữ cảnh báo Budget ở mục 5.2.
 
-[ CHÈN ẢNH CHỤP ]
-Log group / alarm trong CloudWatch
-5.6-Security/cloudwatch-dashboard.png
+![alt text](../../images/cloudwatch_dashboard_1.png)
+1: Trang tổng quan CloudWatch, vào mục Logs để xem log của Lambda.
+![alt text](../../images/cloudwatch_dashboard_2.png)
+2: Danh sách Log groups, log group của hàm Lambda do Lambda tự tạo.
+![alt text](../../images/cloudwatch_dashboard_3.png)
+3: Danh sách Log streams, mỗi stream ghi lại các request của hàm kèm thời điểm log gần nhất.
 
 **Kiểm tra**
 
@@ -51,6 +54,17 @@ Request thử nghiệm xuất hiện trong log; cảnh báo Budget đang hoạt 
 4. Thêm đăng nhập Cognito nếu hệ thống ra khỏi chế độ demo.
 5. Kiểm thử: gọi API với tốc độ cao để xác nhận throttling; thử câu hỏi prompt injection; quét repository tìm secret.
 
-[ CHÈN ẢNH CHỤP ]
-Kết quả kiểm thử bảo mật
-5.6-Security/pentest.png
+![alt text](../../images/pentest_1.png)
+1: Trang Throttling của stage, hiển thị các mức giới hạn đang áp dụng.
+* **Stage:** chọn stage cần giới hạn ở góc phải trên (ảnh đang ở $default). Mỗi stage có cấu hình throttling riêng.
+* **Selected route throttling:** giới hạn riêng cho từng route (ghi đè mức mặc định). Mục này đang trống vì chưa chọn route nào.
+* **Default route throttling:** giới hạn áp dụng cho mọi route trong stage. Hiện **Burst limit** và **Rate limit** đều ghi **Not configured**, nghĩa là chưa giới hạn gì.
+* **Account throttling:** mức trần chung của cả tài khoản trong region (Burst 5000, Rate 10000), dùng chung cho mọi API. Đây là mức hệ thống, không chỉnh ở đây.
+* Chọn **Edit** ở mục **Default route throttling**. <br>
+Đặt giới hạn mặc định
+![alt text](../../images/pentest_2.png)
+2: Đặt Burst limit = 2 và Rate limit = 5 cho route mặc định
+* **Rate limit:** 5, số request trung bình tối đa mỗi giây.
+* **Burst limit:** 2, số request tối đa được xử lý đồng thời trong một đợt tăng đột biến.
+* Chọn **Save**, sau đó chọn **Deploy** để áp dụng. <br>
+Request vượt giới hạn sẽ nhận lỗi **429 Too Many Requests** từ API Gateway, trước khi tới Lambda và Groq.
