@@ -60,7 +60,8 @@ Decide how Lambda injects DynamoDB data into the prompt sent to the model.
 1. Format each retrieved article as a labelled block (article number + content).
 2. Place the legal context before the user's question in the message.
 3. Limit the number and length of articles to stay within the model's rate and token limits.
-4. Record the final template in docs/.
+
+![alt text](../../images/prompt_assembly.png)
 
 * Verify
 

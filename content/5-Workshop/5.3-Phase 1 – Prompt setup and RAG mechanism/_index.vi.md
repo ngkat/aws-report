@@ -60,7 +60,8 @@ Quyết định cách Lambda tiêm (inject) dữ liệu DynamoDB vào prompt g�
 1. Định dạng mỗi điều luật truy xuất thành một khối có nhãn (số điều + nội dung).
 2. Đặt ngữ cảnh luật trước câu hỏi của người dùng trong message.
 3. Giới hạn số lượng và độ dài điều luật để nằm trong giới hạn rate và token của mô hình.
-4. Ghi mẫu cuối cùng vào docs/.
+
+![alt text](../../images/prompt_assembly.png)
 
 * Kiểm tra
 
