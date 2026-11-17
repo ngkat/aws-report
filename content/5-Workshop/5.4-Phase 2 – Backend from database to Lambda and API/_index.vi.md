@@ -59,6 +59,6 @@ Trang danh sách Roles <br>
 * **Role name:** đặt tên gợi nhớ, ví dụ `legal-ai-chat-role`.
 * Chọn **Create role**.
 
-![alt text](../../images/dynamodb_item_3.png)
+![alt text](../../images/dynamodb_items_3.png)
 
 #### 5.4.2. Lập trình hàm AWS Lambda (logic RAG & Groq API)
