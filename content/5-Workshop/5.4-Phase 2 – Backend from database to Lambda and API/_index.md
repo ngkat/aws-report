@@ -1,20 +1,34 @@
 ---
-title : "Access S3 from on-premises"
-date : 2024-01-01
+title : "Phase 2 – Backend: from database to Lambda and API"
+date : 15-10-2026
 weight : 4
 chapter : false
-pre : " <b> 5.4. </b> "
+pre : "  5.4  "
 ---
 
 #### Overview
 
-+ In this section, you will create an Interface endpoint to access Amazon S3 from a simulated on-premises environment. The Interface endpoint will allow you to route to Amazon S3 over a VPN connection from your simulated on-premises environment.
+| Item         | Content                                                                                     |
+| ------------ | ------------------------------------------------------------------------------------------- |
+| Purpose      | A serverless backend that retrieves legal articles, calls the LLM and exposes a stable API. |
+| AWS services | DynamoDB, Lambda, API Gateway, CloudWatch.                                                  |
+| Input        | HTTP POST with the user's question.                                                         |
+| Output       | Standard JSON with the answer or an error code.                                             |
+| Depends on   | Phase 1 prompt; Groq API key.                                                               |
 
-+ Why using **Interface endpoint**: 
-    + Gateway endpoints only work with resources running in the VPC where they are created. Interface endpoints work with resources running in VPC, and also resources running in on-premises environments. Connectivty from your on-premises environment to the cloud can be provided by AWS Site-to-Site VPN or AWS Direct Connect.
-    + Interface endpoints allow you to connect to services powered by AWS PrivateLink. These services include some AWS services, services hosted by other AWS customers and partners in their own VPCs (referred to as PrivateLink Endpoint Services), and supported AWS Marketplace Partner services. For this workshop, we will focus on connecting to Amazon S3.
+#### 5.4.1. Build the knowledge base on DynamoDB
 
-![Interface endpoint architecture](/images/5-Workshop/5.4-S3-onprem/diagram3.png)
+**Goal** <br>
+Store legal articles in a table that Lambda can query. <br>
+**Steps** <br>
+1. Create the table LegalArticles .
+2. Design the item structure (for example article number, title, content, keywords).
+3. Load the articles extracted from Decree 13/2023/ND-CP, including provisions on using ID card data, personal data and violation handling.
+4. Check the item count against the source document.
 
+Limitation: lookup is keyword-based, so a question using different wording may miss the right article.
 
+**Verify** <br>
+The table returns the expected articles when scanned in the console.
 
+####

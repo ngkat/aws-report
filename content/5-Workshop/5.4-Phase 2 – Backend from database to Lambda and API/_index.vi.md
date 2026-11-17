@@ -63,4 +63,7 @@ Retrieving articles from DynamoDB (retrieve_legal_context)
 
 ![alt text](../../images/dynamodb_items_3.png)
 
+**Xác minh** <br>
+Bảng trả về các bài viết như mong đợi khi được quét trong bảng điều khiển (console).
+
 #### 5.4.2. Lập trình hàm AWS Lambda (logic RAG & Groq API)
