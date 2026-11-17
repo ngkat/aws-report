@@ -27,8 +27,6 @@ Make the model act as a legal consultant specialized in Vietnamese regulations s
 3. Add the disclaimer: preliminary answer, not official legal advice.
 4. Test the draft in the Groq playground.
 
-![alt text](../../images/system_prompt.png)
-
 * Verify
 
 The model answers in the intended role and tone.

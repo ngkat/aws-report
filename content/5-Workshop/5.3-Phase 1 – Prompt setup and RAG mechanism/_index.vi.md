@@ -27,8 +27,6 @@ pre : "  5.3  "
 3. Thêm disclaimer: câu trả lời sơ bộ, không phải tư vấn pháp lý chính thức.
 4. Thử bản nháp trong Groq playground.
 
-![alt text](../../images/system_prompt.png)
-
 * Kiểm tra
 
 Mô hình trả lời đúng vai trò và giọng điệu mong muốn.
