@@ -22,9 +22,10 @@ pre : "  5.4  "
 Store legal articles in a table that Lambda can query. <br>
 **Steps** <br>
 1. Create the table LegalArticles .
-2. Design the item structure (for example article number, title, content, keywords).
-3. Load the articles extracted from Decree 13/2023/ND-CP, including provisions on using ID card data, personal data and violation handling.
-4. Check the item count against the source document.
+- In the AWS Management Console, enter "DynamoDB" into the search box and press Enter.
+- From the left-hand menu, select **Tables**, then choose **Create table**.
+
+
 
 Limitation: lookup is keyword-based, so a question using different wording may miss the right article.
 

@@ -57,7 +57,7 @@ Trang danh sách Roles <br>
 * **Trusted entity type:** chọn **AWS service**, **Use case**: chọn **Lambda**.
 * **Permissions:** gắn managed policy `AWSLambdaBasicExecutionRole` để Lambda ghi được log vào CloudWatch, và thêm policy cho phép đọc bảng `LegalArticles` (chỉ cấp quyền tối thiểu cần thiết).
 * **Role name:** đặt tên gợi nhớ, ví dụ `legal-ai-chat-role`.
-* Chọn **Create role**. <br>
+* Chọn **Create role**.
 
 Retrieving articles from DynamoDB (retrieve_legal_context)
 
@@ -65,5 +65,7 @@ Retrieving articles from DynamoDB (retrieve_legal_context)
 
 **Xác minh** <br>
 Bảng trả về các bài viết như mong đợi khi được quét trong bảng điều khiển (console).
+
+Hạn chế: tính năng tra cứu dựa trên từ khóa, vì vậy một câu hỏi sử dụng cách diễn đạt khác có thể khiến hệ thống không tìm thấy bài viết phù hợp.
 
 #### 5.4.2. Lập trình hàm AWS Lambda (logic RAG & Groq API)
