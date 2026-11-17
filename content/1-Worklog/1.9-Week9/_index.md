@@ -15,7 +15,7 @@ pre: "  1.9  "
 | Day | Task | Start Date | Completion Date | Resource Source |
 | --- | ---- | ---------- | --------------- | --------------- |
 | Mon | - Update 4-EventParticipated | 09/11/2026 | 09/11/2026 |
-| Tue | - Update  | 10/11/2026 | 10/11/2026 |
+| Tue | - Update 2-Proposal | 10/11/2026 | 10/11/2026 |
 | Wed | - Update  | 10/11/2026 | 10/11/2026 |
 | Thu | - Update  | 10/11/2026 | 10/11/2026 |
 | Fri | - Update  | 10/11/2026 | 10/11/2026 |
