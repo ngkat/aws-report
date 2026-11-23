@@ -3,7 +3,7 @@ title: "Worklog Tuần 12"
 date: 30-11-2026
 weight: 2
 chapter: false
-pre: " <b> 1.12 </b> "
+pre: "  1.12  "
 ---
 
 ### Mục tiêu tuần 12:
@@ -11,44 +11,32 @@ pre: " <b> 1.12 </b> "
 * Tìm hiểu Hands-on Tutorial của AWS.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task | Start date | Completion date | Resource source |
+| --- | ---- | ---------- | --------------- | --------------- |
+| Mon | - Set up môi trường AWS | 30/11/2026 |30/11/2026 | https://docs.aws.amazon.com/hands-on/latest/setup-environment/setup-environment.html?ref=gsrchandson |
+| Tue | - Tạo một dứng dụng iOS | 01/12/2026 | 01/12/2026 | https://docs.aws.amazon.com/hands-on/latest/build-ios-app-amplify/build-ios-app-amplify.html?ref=gsrchandson |
+| Wed | - Tạo một Flutter Mobile App bằng AWS Amplify - Phần 2 | 02/12/2026 | 02/12/2026 | https://docs.aws.amazon.com/hands-on/latest/build-flutter-mobile-app-part-two/build-flutter-mobile-app-part-2.html?ref=gsrchandson |
+| Thu | - Tạo Continuous Delivery Pipeline | 3/12/2026 | 03/12/2026 | https://docs.aws.amazon.com/hands-on/latest/create-continuous-delivery-pipeline/create-continuous-delivery-pipeline.html?ref=gsrchandson |
+| Fri | - Triển khai ứng dụng .NET lên một phiên bản Windows Server 2022 trong Amazon Lightsail | 04/12/2026 | 04/12/2026 | https://docs.aws.amazon.com/hands-on/latest/host-net-web-app/host-net-web-app.html?ref=gsrchandson |
 
 
 ### Kết quả đạt được tuần 12:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Quản lý backend đám mây không máy chủ (serverless) thông qua giao diện dòng lệnh.
+* Thêm tính năng xác thực vào ứng dụng để cho phép người dùng đăng nhập và đăng xuất.
+* Tích hợp GraphQL API, cơ sở dữ liệu và giải pháp lưu trữ.
+* Chia sẻ backend giữa nhiều dự án khác nhau.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Sao chép (clone) ứng dụng đã được xây dựng trong hướng dẫn trước đó từ GitHub.
+* Sử dụng Amplify CLI để tạo backend Amplify cho ứng dụng này.
+* Cập nhật ứng dụng để hiển thị các chuyến đi trước đây.
+* Tạo mô hình dữ liệu cho các hoạt động trong chuyến đi và hồ sơ người dùng, đồng thời sử dụng GraphQL API để đồng bộ hóa với backend Amplify.
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Thiết lập kho lưu trữ (repository) trên GitHub cho mã nguồn ứng dụng.
+* Tạo môi trường AWS Elastic Beanstalk để triển khai ứng dụng.
+* Cấu hình AWS CodeBuild để xây dựng mã nguồn từ GitHub.
+* Sử dụng AWS CodePipeline để thiết lập quy trình phân phối liên tục (continuous delivery), bao gồm các giai đoạn: lấy mã nguồn, xây dựng và triển khai.
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Cài đặt các vai trò và tính năng máy chủ cần thiết.
+* Cấu hình Visual Studio 2022 Community edition để kết nối với instance của bạn.
+* Xuất bản (publish) mẫu ứng dụng web ASP.NET Core lên instance của bạn.
