@@ -49,3 +49,6 @@ Tham gia sự kiện **Cloud Mastery** tại tòa nhà Bitexco là một trải 
 - **Kết hợp đúng công cụ cho bài toán AI:** Việc nắm vững hệ sinh thái từ Amazon Bedrock đến RAG giúp tối ưu hóa quá trình xây dựng ứng dụng GenAI mà không cần phải tự huấn luyện lại mô hình từ đầu.
 
 #### Một số hình ảnh khi tham gia sự kiện
+![alt text](../../images/cloud_mastery_1.png)
+![alt text](../../images/cloud_mastery_2.png)
+![alt text](../../images/cloud_mastery_3.png)
