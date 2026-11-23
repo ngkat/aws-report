@@ -80,4 +80,3 @@ Attending the **AWS Cloud and AI Day Hanoi - Watch Party at the AWS Ho Chi Minh 
 
 #### Some event photos
 ![alt text](../../images/aws_cloud_day.jpg)
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
