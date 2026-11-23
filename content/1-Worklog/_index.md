@@ -20,9 +20,9 @@ pre: "  1  "
 
 **Week 7:** [Doing group works](1.7-week7/)
 
-**Week 8:** [Doing group works](1.8-week8/)
+**Week 8:** [Update personal progress](1.8-week8/)
 
-**Week 9:** [Studying AWS's Hands-on Tutorials](1.9-week9/)
+**Week 9:** [Update personal progress](1.9-week9/)
 
 **Week 10:** [Studying AWS's Hands-on Tutorials](1.10-week10/)
 

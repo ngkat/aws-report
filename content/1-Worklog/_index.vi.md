@@ -20,9 +20,9 @@ pre: "  1  "
 
 **Tuần 7:** [Làm việc nhóm](1.7-week7/)
 
-**Tuần 8:** [Làm việc nhóm](1.8-week8/)
+**Tuần 8:** [Cập nhật tiến độ cá nhân](1.8-week8/)
 
-**Tuần 9:** [Nghiên cứu các Hands-on Tutorial của AWS](1.9-week9/)
+**Tuần 9:** [Cập nhật tiến độ cá nhân](1.9-week9/)
 
 **Tuần 10:** [Nghiên cứu các Hands-on Tutorial của AWS](1.10-week10/)
 
