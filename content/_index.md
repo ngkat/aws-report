@@ -5,9 +5,10 @@ weight: 1
 chapter: false
 ---
 
-    
 # Internship Report
+
 ### Student Information:
+
 &emsp; **Full Name:** Nguyen Anh Tuan
 
 &emsp; **Phone Number:** 0846338939
