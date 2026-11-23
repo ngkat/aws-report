@@ -13,11 +13,11 @@ pre: "  1.12  "
 ### Tasks to be carried out this week:
 | Day | Task | Start date | Completion date | Resource source |
 | --- | ---- | ---------- | --------------- | --------------- |
-| Mon | - Set up AWS environment | 23/11/2026 | 23/11/2026 | https://docs.aws.amazon.com/hands-on/latest/setup-environment/setup-environment.html?ref=gsrchandson |
-| Tue | - Build an iOS Application | 24/11/2026 | 24/11/2026 | https://docs.aws.amazon.com/hands-on/latest/build-ios-app-amplify/build-ios-app-amplify.html?ref=gsrchandson |
-| Wed | - Build a Flutter Mobile App Using AWS Amplify - Part 2 | 25/11/2026 | 25/11/2026 | https://docs.aws.amazon.com/hands-on/latest/build-flutter-mobile-app-part-two/build-flutter-mobile-app-part-2.html?ref=gsrchandson |
-| Thu | - Create Continuous Delivery Pipeline | 26/11/2026 | 26/11/2026 | https://docs.aws.amazon.com/hands-on/latest/create-continuous-delivery-pipeline/create-continuous-delivery-pipeline.html?ref=gsrchandson |
-| Fri | - Publish a .NET Application to a Windows Server 2022 Instance in Amazon Lightsail | 27/11/2026 | 27/11/2026 | https://docs.aws.amazon.com/hands-on/latest/host-net-web-app/host-net-web-app.html?ref=gsrchandson |
+| Mon | - Set up AWS environment | 30/11/2026 |30/11/2026 | https://docs.aws.amazon.com/hands-on/latest/setup-environment/setup-environment.html?ref=gsrchandson |
+| Tue | - Build an iOS Application | 01/12/2026 | 01/12/2026 | https://docs.aws.amazon.com/hands-on/latest/build-ios-app-amplify/build-ios-app-amplify.html?ref=gsrchandson |
+| Wed | - Build a Flutter Mobile App Using AWS Amplify - Part 2 | 02/12/2026 | 02/12/2026 | https://docs.aws.amazon.com/hands-on/latest/build-flutter-mobile-app-part-two/build-flutter-mobile-app-part-2.html?ref=gsrchandson |
+| Thu | - Create Continuous Delivery Pipeline | 3/12/2026 | 03/12/2026 | https://docs.aws.amazon.com/hands-on/latest/create-continuous-delivery-pipeline/create-continuous-delivery-pipeline.html?ref=gsrchandson |
+| Fri | - Publish a .NET Application to a Windows Server 2022 Instance in Amazon Lightsail | 04/12/2026 | 04/12/2026 | https://docs.aws.amazon.com/hands-on/latest/host-net-web-app/host-net-web-app.html?ref=gsrchandson |
 
 
 ### Week 12 Achievements:
