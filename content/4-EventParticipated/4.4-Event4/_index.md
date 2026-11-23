@@ -6,7 +6,7 @@ chapter: false
 pre: "  4.1  "
 ---
 
-# Summary Report: “”
+# Summary Report: “Cloud Mastery”
 
 ### Event Objectives
 
@@ -14,4 +14,3 @@ pre: "  4.1  "
 
 #### Photos from the event
 
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
