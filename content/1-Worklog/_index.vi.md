@@ -20,7 +20,7 @@ pre: "  1  "
 
 **Tuần 7:** [Làm việc nhóm](1.7-week7/)
 
-**Tuần 8:** [Làm công việc nhóm](1.8-week8/)
+**Tuần 8:** [Làm việc nhóm](1.8-week8/)
 
 **Tuần 9:** [Nghiên cứu các Hands-on Tutorial của AWS](1.9-week9/)
 
