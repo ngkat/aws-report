@@ -44,7 +44,7 @@ Trong quá trình thực tập, em đã tham gia 4 events, với mỗi event là
 ### [Event 4](4.4-Event4/)
 &emsp;**Tên sự kiện:** 
 
-&emsp;**Thời gian:** 0x:00 ngày /0/2026
+&emsp;**Thời gian:** 09:00 ngày 14/11/2026
 
 &emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
 
