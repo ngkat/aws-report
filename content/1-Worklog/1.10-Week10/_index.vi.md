@@ -13,11 +13,11 @@ pre: "  1.10  "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --------- | ------------ | --------------- | -------------- |
-| 2 | -  | 16/11/2026 | 16/11/2026 | m |
-| 3 | -  | 17/11/2026 | 17/11/2026 | m |
-| 4 | -  | 18/11/2026 | 18/11/2026 | m |
-| 5 | -  | 19/11/2026 | 19/11/2026 | m |
-| 6 | -  | 20/11/2026 | 20/11/2026 | m |
+| 2 | - Trích xuất thông tin từ các tài liệu không có cấu trúc bằng Amazon Bedrock và Amazon Textract | 16/11/2026 | 16/11/2026 | https://docs.aws.amazon.com/hands-on/latest/extract-text-with-amazon-textract/extract-text-with-amazon-textract.html?ref=gsrchandson |
+| 3 | - Kết nối với cơ sở dữ liệu Amazon RDS PostgreSQL riêng tư bằng AWS CloudShell | 17/11/2026 | 17/11/2026 | https://docs.aws.amazon.com/hands-on/latest/connect-to-private-amazon-rds-for-postgresql-from-aws-cloudshell/connect-to-private-amazon-rds-postgresql-database-using-aws-cloudshell.html |
+| 4 | - Thiết lập máy chủ AWS Transfer Family với Amazon Cognito làm nhà cung cấp danh tính tùy chỉnh | 18/11/2026 | 18/11/2026 | https://docs.aws.amazon.com/hands-on/latest/set-up-an-aws-transfer-family-server-with-amazon-cognito/set-up-an-aws-transfer-family-server-with-amazon-cognito-as-a-custom-identity-provider.html?ref=gsrchandson |
+| 5 | - Thiết lập ứng dụng web AWS Transfer Family | 19/11/2026 | 19/11/2026 | https://docs.aws.amazon.com/hands-on/latest/set-up-an-aws-transfer-family-web-app/set-up-an-aws-transfer-family-web-app.html?ref=gsrchandson |
+| 6 | - Xây dựng ứng dụng React Full Stack | 20/11/2026 | 20/11/2026 | https://docs.aws.amazon.com/hands-on/latest/build-react-app-amplify-graphql/build-react-app-amplify-graphql.html?ref=gsrchandson |
 
 
 ### Kết quả đạt được tuần 10:
