@@ -89,3 +89,6 @@ Hệ thống áp dụng mô hình kiến trúc Serverless, kết nối khép kí
 Xây dựng thành công một hệ thống Serverless Backend hoàn chỉnh, tự động co giãn, hoạt động ổn định và tối ưu chi phí tuyệt đối ($0).
 #### Giá trị thực tiễn:
 Cung cấp một cổng giao tiếp API chuẩn hóa và giao diện chat trực quan giúp tra cứu nhanh chóng, chính xác các quy định pháp luật cốt lõi trong Nghị định 13/2023/NĐ-CP, phục vụ hiệu quả cho học tập và nghiên cứu.
+
+### 9. Demo
+<video controls src="../images/Demo.mp4" title="Title"></video>
