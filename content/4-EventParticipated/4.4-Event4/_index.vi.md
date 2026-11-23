@@ -1,6 +1,6 @@
 ---
 title: "Event 4"
-date: -0-2026
+date: 14-11-2026
 weight: 1
 chapter: false
 pre: "  4.4  "
