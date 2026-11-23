@@ -36,11 +36,11 @@ pre: "  1.11  "
 * **Database:** Integrate a real-time API, database, and a serverless function.
 * **Function:** Implement a lambda function that is triggered when a user signs up to the App.
 
-* Create an on-demand backup job of an Amazon RDS database
-* Use a backup plan to back up Amazon RDS resources - using a backup plan within AWS Backup, you can automate your backups on a schedule
-* Add resources to an existing backup plan using tags
-* Restore a backup
+* Create an on-demand backup job of an Amazon RDS database.
+* Use a backup plan to back up Amazon RDS resources - using a backup plan within AWS Backup, you can automate your backups on a schedule.
+* Add resources to an existing backup plan using tags.
+* Restore a backup.
 
-* Verify email address
-* Verify domain
-* Send an email using the Amazon SES console
+* Verify email address.
+* Verify domain.
+* Send an email using the Amazon SES console.
