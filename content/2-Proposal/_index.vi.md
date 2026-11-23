@@ -90,5 +90,8 @@ Xây dựng thành công một hệ thống Serverless Backend hoàn chỉnh, t�
 #### Giá trị thực tiễn:
 Cung cấp một cổng giao tiếp API chuẩn hóa và giao diện chat trực quan giúp tra cứu nhanh chóng, chính xác các quy định pháp luật cốt lõi trong Nghị định 13/2023/NĐ-CP, phục vụ hiệu quả cho học tập và nghiên cứu.
 
-### 9. Demo
+### 9. Sơ đồ
+![alt text](../images/architect.jpg)
+
+### 10. Demo
 <video controls src="../images/Demo.mp4" title="Title"></video>
