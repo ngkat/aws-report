@@ -6,7 +6,9 @@ chapter: false
 ---
 
 # Báo cáo thực tập
+
 ### Thông tin sinh viên:
+
 &emsp; **Họ và tên:** Nguyễn Anh Tuấn
 
 &emsp; **Số điện thoại:** 0846338939
@@ -26,7 +28,6 @@ chapter: false
 &emsp; **Thời gian thực tập:** Từ ngày 14/09/2026 đến ngày 14/12/2026
 
 ![alt text](images/pfp.jpg)
-
 
 ### Nội dung báo cáo
 
