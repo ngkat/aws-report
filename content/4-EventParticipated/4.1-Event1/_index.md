@@ -102,4 +102,3 @@ The mock interview session was an incredibly valuable experience. Not only did I
 
 #### Photos from the event
 ![alt text](../../images/cmc.jpg)
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
