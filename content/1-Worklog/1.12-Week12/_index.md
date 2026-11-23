@@ -1,57 +1,42 @@
 ---
 title: "Week 12 Worklog"
-date: 2024-01-01
+date: 30-11-2026
 weight: 2
 chapter: false
-pre: " <b> 1.12. </b> "
+pre: "  1.12  "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 12 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Study AWS's Hands-on Tutorial.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task | Start date | Completion date | Resource source |
+| --- | ---- | ---------- | --------------- | --------------- |
+| Mon | - Set up AWS environment | 23/11/2026 | 23/11/2026 | https://docs.aws.amazon.com/hands-on/latest/setup-environment/setup-environment.html?ref=gsrchandson |
+| Tue | - Build an iOS Application | 24/11/2026 | 24/11/2026 | https://docs.aws.amazon.com/hands-on/latest/build-ios-app-amplify/build-ios-app-amplify.html?ref=gsrchandson |
+| Wed | - Build a Flutter Mobile App Using AWS Amplify - Part 2 | 25/11/2026 | 25/11/2026 | https://docs.aws.amazon.com/hands-on/latest/build-flutter-mobile-app-part-two/build-flutter-mobile-app-part-2.html?ref=gsrchandson |
+| Thu | - Create Continuous Delivery Pipeline | 26/11/2026 | 26/11/2026 | https://docs.aws.amazon.com/hands-on/latest/create-continuous-delivery-pipeline/create-continuous-delivery-pipeline.html?ref=gsrchandson |
+| Fri | - Publish a .NET Application to a Windows Server 2022 Instance in Amazon Lightsail | 27/11/2026 | 27/11/2026 | https://docs.aws.amazon.com/hands-on/latest/host-net-web-app/host-net-web-app.html?ref=gsrchandson |
 
 
 ### Week 12 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Manage a serverless cloud backend from the command line.
+* Add auth to your app to enable sign-in and sign-out.
+* Add a GraphQL API, database, and storage solution.
+* Share your backend between multiple projects.
 
-* Successfully created and configured an AWS Free Tier account.
+* Clone the app we built in an earlier how-to guide from GitHub.
+* Use the Amplify CLI to create an Amplify backend for this app.
+* Update the app to display past trips.
+* Create a data model for the trip’s activities and the user's profile, and use the GraphQL API to synchronize to the Amplify backend.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Set up a GitHub repository for the application code.
+* Create an AWS Elastic Beanstalk environment to deploy the application.
+* Configure AWS CodeBuild to build the source code from GitHub.
+* Use AWS CodePipeline to set up the continuous delivery pipeline with source, build, and deploy stages.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Install the required server roles and features.
+* Configure Visual Studio 2022 Community edition to connect to your instance.
+* Publish the ASP.NET core web application template to your instance.
