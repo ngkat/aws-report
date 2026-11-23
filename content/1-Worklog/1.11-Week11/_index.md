@@ -8,7 +8,7 @@ pre: "  1.11  "
 
 ### Week 11 Objectives:
 
-* CStudy AWS's Hands-on Tutorial.
+* Study AWS's Hands-on Tutorial.
 
 ### Tasks to be carried out this week:
 | Day | Task | Start date | Completion date | Resource source |
