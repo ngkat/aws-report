@@ -6,12 +6,13 @@ chapter: false
 pre: "  6  "
 ---
 
-During my internship at **Amazon Web Services** from **14/09/2026** to **14/12/2026**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
-I participated in **building an AI supports law-related issues**, through which I improved my skills in **planning, time spending, tackle out-of-mastery problems, analysis, reporting, communicating, solo and group working abilities**.  
+During my internship at **Amazon Web Services** from **September 14, 2026**, to **December 14, 2026**, I had the privilege of consolidating, applying, and translating my theoretical academic foundation into practical enterprise solutions.
 
-In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
+Specifically, I was involved in **architecting and developing an AI-driven legal support assistant**. Through this technical engagement, I substantially enhanced my competencies in **project planning**, **time management**, **troubleshooting complex challenges beyond my initial domain of expertise**, **analytical evaluation**, **technical reporting**, **professional communication**, and **both autonomous and cross-functional collaboration**.
 
-To objectively reflect on my internship period, I would like to evaluate myself based on the following criteria:
+With respect to professional conduct, I consistently demonstrated a strong commitment to deliverable excellence, strictly observed organizational regulations and protocols, and proactively engaged with peers and mentors to optimize overall operational efficiency.
+
+In order to provide an objective and comprehensive assessment of my internship performance, I present my self-evaluation structured around the following key criteria:
 
 | No. | Criteria                            | Description                                                                                      | Good | Fair | Average |
 | --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | ---- | ---- | ------- |
