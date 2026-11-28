@@ -37,4 +37,4 @@ Architecture and data-flow diagram
 5. [Frontend – S3 static website](<5.5-Frontend – S3 static website>)
 6. [Security & operations](<5.6-Security & operations>)
 7. [Final output and next steps](<5.7-Final output and next steps>)
-8. [Clean up](5.8-Cleanup)
+8. [Clean up](<5.8-Cleanup>)

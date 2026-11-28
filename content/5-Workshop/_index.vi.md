@@ -37,4 +37,4 @@ Sơ đồ kiến trúc & luồng dữ liệu
 5. [Frontend – S3 static website](<5.5-Frontend – S3 static website>)
 6. [Bảo mật & vận hành](<5.6-Security & operations>)
 7. [Thành quả cuối cùng và hướng phát triển](<5.7-Final output and next steps>)
-8. [Dọn dẹp tài nguyên](5.8-Cleanup)
+8. [Dọn dẹp tài nguyên](<5.8-Cleanup>)
