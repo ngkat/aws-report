@@ -44,7 +44,7 @@ During my internship, I participated in 4 events. Each one was a memorable exper
 ### [Event 4](4.4-Event4/)
 &emsp;**Event Name:** Cloud Mastery
 
-&emsp;**Time:** 09:00, 14/11/2026
+&emsp;**Time:** 09:00, November 14, 2026
 
 &emsp;**Location:** 26th Floor, Bitexco Building, No. 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City
 
