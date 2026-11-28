@@ -7,7 +7,7 @@ pre: "  6  "
 ---
 
 During my internship at **Amazon Web Services** from **14/09/2026** to **14/12/2026**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
-I participated in **building an AI supports law-related issues**, through which I improved my skills in **[list skills: planning, time spending, tackle out-of-mastery problems, analysis, reporting, communicating, solo and group working abilities]**.  
+I participated in **building an AI supports law-related issues**, through which I improved my skills in **planning, time spending, tackle out-of-mastery problems, analysis, reporting, communicating, solo and group working abilities**.  
 
 In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
 
