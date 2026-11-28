@@ -32,6 +32,8 @@ Văn hoá ở đây rất tích cực, có thể bắt chuyện với cả ngư�
 
 AWS tạo một môi trường cao cấp ở Bitexco giúp các sinh viên có cơ hội tiếp xúc với môi trường văn phòng cao cấp, trải nghiệm lối sống của một nhân viên văn phòng ở Quận 1, mở mang tầm mắt rất nhiều cũng như tạo động lực để các sinh viên đặt mục tiêu không ngừng cái thiện bản thân. Việc tạo điều kiện để tham gia các sự kiện cũng là điều đáng lưu ý để sinh viên có cơ hội học hỏi những kinh nghiệm, thành tựu mà các host để lại cũng như có thêm cơ hội tiếp cận doanh nghiệp phục vụ cho tương lai sau này.
 
+---
+
 ### Ý kiến, nhận xét chung
 - Điều em hài lòng nhất trong thời gian thực tập là em có cơ hội được làm việc trong môi trường chuyên nghiệp, cao cấp, có áp lực để không lười biếng trong lúc làm cũng như trải nghiệm sớm lối sống của người đi làm.
 - Tuy nhiên vì là văn phòng mượn nên phúc lợi của sinh viên khá ít, sinh viên chỉ được sinh hoạt quanh quẩn trong 1 không gian duy nhất, để đi lại(đi vệ sinh, nghỉ trưa,... ) cũng phải đi bằng lối đi phụ. Lối đi chính chỉ được phép đi 2 lần là lúc check-in và lúc ra về, lounge cũng như tài nguyên(thức ăn vặt, cà phê, máy lọc nước,... ) hoàn toàn không được sử dụng vì đó là của các nhân viên chính thức, điều này có thể hoàn toàn hiểu được.
