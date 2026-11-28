@@ -27,12 +27,13 @@ AWS là một công ty liên quan trực tiếp đến ngành IT hay cụ thể 
 
 Trong quá trình OJT, các sinh viên phải từ tìm những mảnh ghép phù hợp cho dự án nhóm nên cơ hội học hỏi và phát triển kỹ năng là vô hạn, hoặc là các sinh viên phải tự thích nghi và tiến bộ để hoàn thành tốt nhiệm vụ của mình hoặc là phải phát triển các kỹ năng sẵn có của mình đến mức vượt trội để có thể hoàn thành kì OJT, giảm thiểu tình trạng sinh viên dậm chân tại chỗ há miệng chờ sung.
 
-**5. Văn hóa & tinh thần đồng đội**  
-Văn hóa công ty rất tích cực: mọi người tôn trọng lẫn nhau, làm việc nghiêm túc nhưng vẫn vui vẻ. Khi có dự án gấp, mọi người cùng nhau cố gắng, hỗ trợ không phân biệt vị trí. Điều này giúp mình cảm thấy mình là một phần của tập thể, dù chỉ là thực tập sinh.
+**5. Văn hóa & tinh thần đồng đội**
 
-**6. Chính sách / phúc lợi cho thực tập sinh**  
-Công ty có hỗ trợ phụ cấp thực tập và tạo điều kiện về thời gian linh hoạt khi cần thiết. Ngoài ra, việc được tham gia các buổi đào tạo nội bộ là một điểm cộng lớn.
+Văn hoá ở đây rất tích cực, có thể bắt chuyện với cả người lạ lẫn người quen, ai cũng sẵn sàng chia sẻ chi tiết về dự án của nhóm mình với người khác để trao đổi về các feature để cải thiện lẫn nhau. Tinh thần đồng đội cũng là điều đáng khen khi các member của nhóm em sẵn sàng san sẻ phần việc của nhau trong trường hợp một người làm xong sớm hơn deadline dự kiến mà những người khác vẫn chưa xong, họ sẵn sàng tham gia làm giúp để tăng tiến độ hoàn thiện.
 
+**6. Chính sách / phúc lợi cho thực tập sinh**
+
+AWS tạo một môi trường cao cấp ở Bitexco giúp các sinh viên có cơ hội tiếp xúc với môi trường văn phòng cao cấp, trải nghiệm lối sống của một nhân viên văn phòng ở Quận 1, mở mang tầm mắt rất nhiều cũng như tạo động lực để các sinh viên đặt mục tiêu không ngừng cái thiện bản thân. Việc tạo điều kiện để tham gia các sự kiện cũng là điều đáng lưu ý để sinh viên có cơ hội học hỏi những kinh nghiệm, thành tựu mà các host để lại cũng như có thêm cơ hội tiếp cận doanh nghiệp phục vụ cho tương lai sau này.
 
 ### Một số câu hỏi khác
 - Điều bạn **hài lòng nhất** trong thời gian thực tập?  
