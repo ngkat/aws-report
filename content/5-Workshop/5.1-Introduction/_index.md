@@ -19,7 +19,7 @@ Employees need fast answers about personal-data rules (for example, using custom
 
 #### Architecture and data flow
 
-![alt text](<../../images/Architecture and data-flow diagram with numbered steps 1-8.png>)
+![alt text](<../../images/Architecture and data-flow diagram.png>)
 
 Architecture and data-flow diagram with numbered steps 1-8
 

@@ -19,7 +19,7 @@ Nhân viên cần câu trả lời nhanh về quy định dữ liệu cá nhân 
 
 #### Kiến trúc và luồng dữ liệu
 
-![alt text](<../../images/Architecture and data-flow diagram with numbered steps 1-8.png>)
+![alt text](<../../images/Architecture and data-flow diagram.png>)
 
 Sơ đồ kiến trúc & luồng dữ liệu có đánh số bước 1-8
 
