@@ -35,5 +35,6 @@ AWS tạo một môi trường cao cấp ở Bitexco giúp các sinh viên có c
 ---
 
 ### Ý kiến, nhận xét chung
+
 - Điều em hài lòng nhất trong thời gian thực tập là em có cơ hội được làm việc trong môi trường chuyên nghiệp, cao cấp, có áp lực để không lười biếng trong lúc làm cũng như trải nghiệm sớm lối sống của người đi làm.
 - Tuy nhiên vì là văn phòng mượn nên phúc lợi của sinh viên khá ít, sinh viên chỉ được sinh hoạt quanh quẩn trong 1 không gian duy nhất, để đi lại(đi vệ sinh, nghỉ trưa,... ) cũng phải đi bằng lối đi phụ. Lối đi chính chỉ được phép đi 2 lần là lúc check-in và lúc ra về, lounge cũng như tài nguyên(thức ăn vặt, cà phê, máy lọc nước,... ) hoàn toàn không được sử dụng vì đó là của các nhân viên chính thức, điều này có thể hoàn toàn hiểu được.
