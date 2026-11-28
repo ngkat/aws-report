@@ -6,13 +6,13 @@ chapter: false
 pre: "  6  "
 ---
 
-Trong thời gian thực tập tại **Amazon Web Services** từ ngày **14/09/2026** đến ngày **14/12/2026**, tôi đã có cơ hội hệ thống hóa, vận dụng và chuyển hóa các kiến thức lý thuyết đã tích lũy trên giảng đường vào môi trường doanh nghiệp thực tiễn.
+Trong thời gian thực tập tại **Amazon Web Services** từ ngày **14/09/2026** đến ngày **14/12/2026**, em đã có cơ hội hệ thống hóa, vận dụng và chuyển hóa các kiến thức lý thuyết đã tích lũy trên giảng đường vào môi trường doanh nghiệp thực tiễn.
 
-Cụ thể, tôi đã tham gia vào quá trình **xây dựng và phát triển hệ thống trợ lý AI hỗ trợ giải đáp các vấn đề pháp lý**. Thông qua dự án chuyên môn này, tôi đã nâng cao đáng kể **năng lực lập kế hoạch**, **quản lý thời gian**, **phân tích và giải quyết các bài toán kỹ thuật phức tạp ngoài phạm vi kiến thức nền tảng**, **tổng hợp báo cáo**, **giao tiếp chuyên nghiệp**, cũng như **khả năng làm việc độc lập và phối hợp nhóm hiệu quả**.
+Cụ thể, em đã tham gia vào quá trình **xây dựng và phát triển hệ thống trợ lý AI hỗ trợ giải đáp các vấn đề pháp lý**. Thông qua dự án chuyên môn này, em đã nâng cao đáng kể **năng lực lập kế hoạch**, **quản lý thời gian**, **phân tích và giải quyết các bài toán kỹ thuật phức tạp ngoài phạm vi kiến thức nền tảng**, **tổng hợp báo cáo**, **giao tiếp chuyên nghiệp**, cũng như **khả năng làm việc độc lập và phối hợp nhóm hiệu quả**.
 
-Về tác phong và kỷ luật lao động, tôi luôn duy trì tinh thần trách nhiệm cao nhằm đảm bảo chất lượng đầu ra của công việc, tuân thủ nghiêm ngặt các quy định và quy chuẩn của tổ chức, đồng thời chủ động trao đổi với đồng nghiệp cùng người hướng dẫn để tối ưu hóa hiệu suất vận hành chung.
+Về tác phong và kỷ luật lao động, em luôn duy trì tinh thần trách nhiệm cao nhằm đảm bảo chất lượng đầu ra của công việc, tuân thủ nghiêm ngặt các quy định và quy chuẩn của tổ chức, đồng thời chủ động trao đổi với đồng nghiệp cùng người hướng dẫn để tối ưu hóa hiệu suất vận hành chung.
 
-Nhằm đưa ra góc nhìn khách quan và toàn diện về quá trình rèn luyện trong kỳ thực tập, tôi xin trình bày phần tự đánh giá năng lực bản thân dựa trên các tiêu chí trọng tâm sau:
+Nhằm đưa ra góc nhìn khách quan và toàn diện về quá trình rèn luyện trong kỳ thực tập, em xin trình bày phần tự đánh giá năng lực bản thân dựa trên các tiêu chí trọng tâm sau:
 
 
 | STT | Tiêu chí                            | Mô tả                                                                                            | Tốt | Khá | Trung bình |
