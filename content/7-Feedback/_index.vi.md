@@ -11,17 +11,21 @@ pre: "  7  "
 
 ### Đánh giá chung
 
-**1. Môi trường làm việc**  
-Môi trường làm việc rất thân thiện và cởi mở. Các thành viên trong FCAJ luôn sẵn sàng hỗ trợ khi mình gặp khó khăn, kể cả ngoài giờ làm việc. Không gian làm việc gọn gàng, thoải mái, giúp mình tập trung tốt hơn. Tuy nhiên, mình nghĩ có thể bổ sung thêm một số buổi giao lưu hoặc team bonding để mọi người hiểu nhau hơn.
+**1. Môi trường làm việc**
 
-**2. Sự hỗ trợ của mentor / team admin**  
-Mentor hướng dẫn rất chi tiết, giải thích rõ ràng khi mình chưa hiểu và luôn khuyến khích mình đặt câu hỏi. Team admin hỗ trợ các thủ tục, tài liệu và tạo điều kiện để mình làm việc thuận lợi. Mình đánh giá cao việc mentor cho phép mình thử và tự xử lý vấn đề thay vì chỉ đưa đáp án.
+Môi trường làm việc khá gần gũi, thú vị khi mỗi ngày đến văn phòng là một đợt người khác nhau, dễ dàng để tham khảo ý tưởng, tiến trình, giao tiếp và giao lưu với người khác. Không gian làm việc sang trọng, sạch sẽ và không có mùi, view tầng 26 nhìn xuống dưới hoặc nhìn ra ngoài khá đẹp. Bù lại không gian văn phòng chật chội và khá tù túng khi phải chứa quá nhiều người cũng như cửa sổ thường bị đóng lại khi nắng lên để tránh nóng.
+
+**2. Sự hỗ trợ của mentor / team admin**
+
+Em không nhờ đến sự hỗ trợ của các mentor nhiều nên cũng không có ý kiến. Theo như em thấy trên WhatsApp đa số các câu hỏi của các bạn đều được các mentor trả lời trong thời gian rất ngắn, bao gồm cả những câu hỏi đã có câu trả lời trong tài liệu nhưng các mentor vẫn chịu khó trả lời, và tất cả câu trả lời đều rất tận tình, chi tiết dù là về văn phòng, quy định hay về project nhóm. Song vẫn có một vài trường hợp hỏi nhưng không nhận được câu trả lời.
 
 **3. Sự phù hợp giữa công việc và chuyên ngành học**  
-Công việc mình được giao phù hợp với kiến thức mình đã học ở trường, đồng thời mở rộng thêm những mảng mới mà mình chưa từng được tiếp cận. Nhờ vậy, mình vừa củng cố kiến thức nền tảng, vừa học thêm kỹ năng thực tế.
 
-**4. Cơ hội học hỏi & phát triển kỹ năng**  
-Trong quá trình thực tập, mình học được nhiều kỹ năng mới như sử dụng công cụ quản lý dự án, kỹ năng làm việc nhóm, và cả cách giao tiếp chuyên nghiệp trong môi trường công ty. Mentor cũng chia sẻ nhiều kinh nghiệm thực tế giúp mình định hướng tốt hơn cho sự nghiệp.
+AWS là một công ty liên quan trực tiếp đến ngành IT hay cụ thể hơn là An Toàn Thông tin của em, vì vậy sự phù hợp của nơi này để vận dụng các kĩ năng đã học đã và đã có được là không thể bàn cãi. Nhờ đó khả năng mở rộng và cải thiện các side-skills cũng tăng lên rất nhiều.
+
+**4. Cơ hội học hỏi & phát triển kỹ năng**
+
+Trong quá trình OJT, các sinh viên phải từ tìm những mảnh ghép phù hợp cho dự án nhóm nên cơ hội học hỏi và phát triển kỹ năng là vô hạn, hoặc là các sinh viên phải tự thích nghi và tiến bộ để hoàn thành tốt nhiệm vụ của mình hoặc là phải phát triển các kỹ năng sẵn có của mình đến mức vượt trội để có thể hoàn thành kì OJT, giảm thiểu tình trạng sinh viên dậm chân tại chỗ há miệng chờ sung.
 
 **5. Văn hóa & tinh thần đồng đội**  
 Văn hóa công ty rất tích cực: mọi người tôn trọng lẫn nhau, làm việc nghiêm túc nhưng vẫn vui vẻ. Khi có dự án gấp, mọi người cùng nhau cố gắng, hỗ trợ không phân biệt vị trí. Điều này giúp mình cảm thấy mình là một phần của tập thể, dù chỉ là thực tập sinh.
