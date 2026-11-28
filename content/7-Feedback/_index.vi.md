@@ -1,9 +1,9 @@
 ---
 title: "Chia sẻ, đóng góp ý kiến"
-date: 2024-01-01
+date: 28-11-2026
 weight: 7
 chapter: false
-pre: " <b> 7. </b> "
+pre: "  7  "
 ---
 {{% notice warning %}}
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
